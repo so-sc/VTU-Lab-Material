@@ -12,6 +12,7 @@
 
 ## Packages and Dependencies
 The following listed packages and instructions are given with assumption that you have a PC with Python2 or Python3 already installed
+
 | Package | Documentation |
 | ------ | ------ |
 | Jupyter | [https://jupyter.readthedocs.io/en/latest/](https://jupyter.readthedocs.io/en/latest/) |
