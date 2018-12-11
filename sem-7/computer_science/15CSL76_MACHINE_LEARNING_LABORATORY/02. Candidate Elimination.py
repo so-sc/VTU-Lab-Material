@@ -14,8 +14,8 @@ concepts = np.array(data.iloc[:, :-1])
 target = np.array(data.iloc[:, -1])
 
 def learn(concepts, target):
-    specific_h = concepts[0]
-    general_h = [["?"] * len(specific_h)] * len(specific_h)
+    specific_h = concepts[0].copy()
+    general_h = [["?" for i in range(len(specific_h))] for j in range(len(specific_h))]
     for i, h in enumerate(concepts):
         if target[i] == 'yes':
             for x in range(len(specific_h)):
