@@ -6,7 +6,7 @@
 #### The following programs can be run online on a jupyter notebook in your browser.
 
 # Run the programs online
-  - Click on the above launch button or click [here](https://github.com/joemccann/dillinger/blob/master/KUBERNETES.md) and paste this repository url
+  - Click on the above Launch Binder or click [here](https://github.com/joemccann/dillinger/blob/master/KUBERNETES.md) and paste this repository url
   - Once inside the notebook navigate to `sem-7/computer_science/15CSL76_MACHINE_LEARNING_LABORATORY`
   - Click on one of the program files with extension `.ipynb` and run the program 
  
