@@ -18,8 +18,8 @@ The following listed packages and instructions are given with assumption that yo
 | Jupyter | [https://jupyter.readthedocs.io/en/latest/](https://jupyter.readthedocs.io/en/latest/) |
 | Sklearn | [https://scikit-learn.org/stable/documentation.html](https://scikit-learn.org/stable/documentation.html) |
 | NumPy | [http://www.numpy.org/](http://www.numpy.org/) |
-| Pandas | [https://pandas.pydata.org/]([https://pandas.pydata.org/]) |
-| Matplotlib | [https://matplotlib.org/]([https://matplotlib.org/]) |
+| Pandas | [https://pandas.pydata.org/](https://pandas.pydata.org/) |
+| Matplotlib | [https://matplotlib.org/](https://matplotlib.org/) |
 
 ## Local Installation
 Run the following commands for installation on you local machine 
