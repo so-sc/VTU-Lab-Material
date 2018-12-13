@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/css" href="style.css" ?>
+<students>
+    <student>
+        <name>Musthaq Ahamad</name>
+        <usn>4SF15cs085</usn>
+        <college>Sahyadri College</college>
+        <branch>CSE</branch>
+        <yoj>2015</yoj>
+    </student>
+    <student>
+        <name>Lalith Sagar Manoj</name>
+        <usn>4SF15cs085</usn>
+        <college>Sahyadri College</college>
+        <branch>CSE</branch>
+        <yoj>2015</yoj>
+    </student>
+    <student>
+        <name>Hari Krishnan</name>
+        <usn>4SF15cs085</usn>
+        <college>Sahyadri College</college>
+        <branch>CSE</branch>
+        <yoj>2015</yoj>
+    </student>
+    <student>
+        <name>Rahil Abdullah</name>
+        <usn>4SF15cs085</usn>
+        <college>Sahyadri College</college>
+        <branch>CSE</branch>
+        <yoj>2015</yoj>
+    </student>
+</students>
