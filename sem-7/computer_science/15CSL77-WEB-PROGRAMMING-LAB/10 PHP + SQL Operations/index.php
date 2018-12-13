@@ -25,7 +25,6 @@
     if (isset($_GET['sort'])) {
         $key = $_GET['key'];
         for ($i = 0; $i < count($students)-1; $i++) {
-            $min = $i;
             for ($j = $i+1; $j < count($students); $j++) {
                 if ($students[$i][$key] < $students[$j][$key]) {
                     // swap the two rows
