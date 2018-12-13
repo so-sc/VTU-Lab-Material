@@ -1,3 +1,4 @@
+[![SOSC](https://is.gd/visit_sosc_badge)](https://sosc.org.in)
 # VTU Lab Material
 #### Ever had trouble getting the right VTU lab material to study from? Well look no further here's a collection of all resources required gathered under one roof!
 
