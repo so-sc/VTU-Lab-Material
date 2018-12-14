@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>4 String Manipulation</title>
+</head>
+<body>
+    <h1>String Manipulation</h1>
+    <h2>
+        <ul>
+            <li>Find the left most vowel in the string</li>
+            <li>Reverse the given number</li>
+        </ul>
+    </h2>
+    <hr/>
+    <p>
+        <h3>Enter the value</h3>
+        <input type="text" id="input" placeholder="Input a string or a number">
+        <input type="button" id="btn_check" value="check">
+        <h3>Result: <span id="result"></span></h3>
+    </p>
+
+    <script>
+        let input = document.getElementById("input");
+        let btnCheck = document.getElementById("btn_check");
+        let result = document.getElementById("result");
+
+        btnCheck.addEventListener('click', event => {
+            checkInput(input.value.toString());
+        });
+
+        function checkInput (str) {
+            if (Number.isInteger(parseInt(str))) {
+                let num = parseInt(str);
+                let rev = 0, rem = 0;
+                while (num > 0) {
+                    rem = parseInt(num%10);
+                    rev = rev*10+rem;
+                    num = parseInt(num/10);
+                }
+
+                result.innerHTML = rev;
+            } else {
+                let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+                
+                for (let i = 0; i < str.length; i++) {
+                    if(vowels.indexOf(str.charAt(i)) != -1) {
+                        result.innerHTML = `Position of left most vowel: ${str.charAt(i)} is ${i+1}`;
+                        break;
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

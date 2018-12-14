@@ -1,0 +1,33 @@
+students {
+    background-color: bisque;
+    font-family: 'ubuntu';
+}
+
+* {
+    display: block;
+    margin: 10px;   
+}
+name {
+    font-size: 15pt;
+    color: #ff5500;
+}
+
+usn, college, branch, yoj {
+    margin-left: 25px;
+}
+usn::before {
+    content: 'USN : ';
+    font-weight: bold;
+}
+college::before {
+    content: 'College : ';
+    font-weight: bold;
+}
+branch::before {
+    content: 'Branch : ';
+    font-weight: bold;
+}
+yoj::before {
+    content: 'Joining : ';
+    font-weight: bold;
+}

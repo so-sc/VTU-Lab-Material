@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>1b Simple Calculator</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+    <h1>Simple Calculator</h1>
+    <table border="1">
+        <!-- The calculator display screen-->
+        <tr>
+            <td colspan="5">
+                <input type="text" id="result" value="0" />
+            </td>
+        </tr>
+
+        <!-- All the calculator keys -->
+        <tr>
+            <td><input type="button" value="7" onclick="insert_operand(this.value)"/></td>
+            <td><input type="button" value="8" onclick="insert_operand(this.value)"/></td>
+            <td><input type="button" value="9" onclick="insert_operand(this.value)"/></td>
+            <td><input type="button" value="+" onclick="insert_operator('add')"/></td>
+            <td><input type="button" value="-" onclick="insert_operator('subtract')"/></td>
+        </tr
+        <tr>
+            <td><input type="button" value="4" onclick="insert_operand(this.value)"/></td>
+            <td><input type="button" value="5" onclick="insert_operand(this.value)"/></td>
+            <td><input type="button" value="6" onclick="insert_operand(this.value)"/></td>
+            <td><input type="button" value="*" onclick="insert_operator('multiply')"/></td>
+            <td><input type="button" value="/" onclick="insert_operator('divide')"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="insert_operand(this.value)"/></td>
+            <td><input type="button" value="2" onclick="insert_operand(this.value)"/></td>
+            <td><input type="button" value="3" onclick="insert_operand(this.value)"/></td>
+            <td><input type="button" value="0" onclick="insert_operand(this.value)"/></td>
+            <td><input type="button" value="=" onclick="insert_operator('equals')"/></td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <input type="button" width="100%" value="clear" onclick="reset()"/>
+            </td>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
