@@ -1,0 +1,43 @@
+students {
+	background: lightblue;
+}
+
+name{
+	color: darkblue;
+	font-size: 20px;
+}
+
+usn, branch, year, college, email{
+	display: block;
+	color: blue;
+	font-size: 20px;
+	padding: 5px 20px; 
+}
+
+/* To show tag names we use content attribute which requires a pseudo element like ":before"*/
+usn:before {
+	content:"USN: ";
+	font-weight: bold;
+	color: red;
+}
+college:before {
+	content:"College: ";
+	font-weight: bold;
+	color: red;
+}
+branch:before {
+	content:"Branch: ";
+	font-weight: bold;
+	color: red;
+}
+year:before {
+	content:"Year: ";
+	font-weight: bold;
+	color: red;
+}
+email:before {
+	content:"Email: ";
+	font-weight: bold;
+	color: red;
+}
+
