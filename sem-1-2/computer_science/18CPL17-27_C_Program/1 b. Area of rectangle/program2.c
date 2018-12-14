@@ -1,4 +1,4 @@
-// 2.) C program to fin area of rectangle
+// 2.) C program to find area of rectangle
 /*To find area of rectangle*/ 
 
 
