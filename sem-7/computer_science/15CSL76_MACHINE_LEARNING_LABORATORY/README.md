@@ -31,7 +31,7 @@ $ git clone https://github.com/so-sc/VTU-Lab-Material.git
 ```
 2. Change to the following folder ``` sem-7/computer_science/15CS76L_MACHINE_LEARNING_LABORATORY/ ``` and run 
 ```sh
-$ cd sem-7/computer_science/15CSL_MACHINE_LEARNING_LABORATORY/
+$ cd VTU-Lab-Material/sem-7/computer_science/15CSL_MACHINE_LEARNING_LABORATORY/
 ```
 3. Install all the required packages
 ```sh
