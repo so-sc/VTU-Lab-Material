@@ -1,7 +1,7 @@
 # Machine Learning Laboratory 15CSL76
 ![Python](https://img.shields.io/pypi/pyversions/Django.svg?logo=python&logoColor=white&style=for-the-badge) [![SOSC](https://is.gd/visit_sosc_badge)](https://sosc.org.in)
 
-[![Binder](https://img.shields.io/badge/Launch-Binder-blue.svg?logo=jupyter&logoColor=white&style=for-the-badge)](https://mybinder.org/v2/gh/Hitoshirenu/VTU-Lab-Material/master)
+[![Binder](https://img.shields.io/badge/Launch-Binder-blue.svg?logo=jupyter&logoColor=white&style=for-the-badge)](https://mybinder.org/v2/gh/so-sc/VTU-Lab-Material/master)
 
 #### The following programs can be run online on a jupyter notebook in your browser.
 
@@ -25,9 +25,9 @@ The following listed packages and instructions are given with assumption that yo
 
 ## Local Installation
 Run the following commands for installation on you local machine 
-1. Click [here](https://github.com/Hitoshirenu/VTU-Lab-Material/archive/master.zip) to download the repository and unzip it or run the below command
+1. Click [here](https://github.com/so-sc/VTU-Lab-Material/archive/master.zip) to download the repository and unzip it or run the below command
 ```sh
-$ git clone https://github.com/Hitoshirenu/VTU-Lab-Material.git
+$ git clone https://github.com/so-sc/VTU-Lab-Material.git
 ```
 2. Change to the following folder ``` sem-7/computer_science/15CS76L_MACHINE_LEARNING_LABORATORY/ ``` and run 
 ```sh
