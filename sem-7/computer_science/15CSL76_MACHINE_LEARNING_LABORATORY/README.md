@@ -13,7 +13,7 @@
 ##### Click [here](https://www.cheatography.com/weidadeyue/cheat-sheets/jupyter-notebook/#downloads) to know about how to use a Jupyter Notebook and  [here](https://mybinder.readthedocs.io/en/latest/faq.html) to know more about Binder
 
 ## Packages and Dependencies
-The following listed packages and instructions are given with assumption that you have a PC with Python2 or Python3 already installed
+The following listed packages and instructions are given with assumption that you have a PC with Python3 already installed
 
 | Package | Documentation |
 | ------ | ------ |
