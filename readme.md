@@ -2,6 +2,12 @@
 # VTU Lab Material
 #### Ever had trouble getting the right VTU lab material to study from? Well look no further here's a collection of all resources required gathered under one roof!
 
+### Quick Links
+- [DS Lab](sem-3/computer_science/DS_LAB)
+- [CN Lab](sem-5/computer_science/CN_Lab)
+- [ML Lab](sem-7/computer_science/15CSL76_MACHINE_LEARNING_LABORATORY)
+- [Web Lab](sem-7/computer_science/15CSL77-WEB-PROGRAMMING-LAB)
+
 
 # Contributing
 To contribute to the project, Please take up the tasks specified in the issues. Add a comment in the issues if you are taking up one. 
