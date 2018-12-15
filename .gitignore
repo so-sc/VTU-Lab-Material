@@ -1,4 +1,3 @@
-*
 .DS_STORE
 .vscode
-!.gitignore
+**/.DS_STORE
