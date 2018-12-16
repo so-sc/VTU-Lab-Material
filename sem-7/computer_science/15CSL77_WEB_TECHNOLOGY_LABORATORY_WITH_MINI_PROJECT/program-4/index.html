@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>Number or Vowel?</title>
+  <meta charset="utf-8"> 
+</head>
+<body>
+
+  <form align="center">
+    <input type="text" id="input"/>
+    <button onclick="vowel_num()">Submit</button> 
+    <button type="reset">Reset</button> 
+  </form>
+
+  <script>
+    function vowel_num()
+    {
+      var str = document.getElementById('input').value;
+
+      // The isNaN is a built in function which returns true only for string 
+      if(isNaN(str))
+      {
+          str_v = str.toLowerCase();
+          var not_found = true;
+          for(var i=0; i<str_v.length; i++)
+          {
+            if(str_v[i]=='a' || str_v[i]=='e' || str_v[i]=='i' || str_v[i]=='o' || str_v[i]=='u')
+            {
+              alert("String:"+str+" Vowel:"+str_v[i]+" Position:"+i);
+              not_found = false;
+              break;
+            }
+          }
+          if(not_found)
+          {
+            alert("No vowel found!");
+          }
+      }else
+        {
+          // Reverse input using built in function
+          var rev_str = str.toString().split('').reverse().join('');
+          alert("The Number:-"+str+" The Reverse:-"+rev_str);
+        }
+    }
+  </script>
+
+</body>
+</html>

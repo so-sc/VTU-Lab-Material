@@ -2,7 +2,7 @@
 #### Collection of VTU laboratory easy solutions and related educational material maintained **by the students, for the students, to the students**. 
 
 # Motivation
-Ever had trouble getting the right VTU lab material to study from? Well look no further here's a collection of all resources required gathered and verified with respective laboratory incharge by students over at [Sayadri Open Source Community](https://sosc.org.in)
+Ever had trouble getting the right VTU lab material to study from? Well look no further here's a collection of all resources required gathered and verified with respective laboratory incharge by students over at [Shayadri Open Source Community](https://sosc.org.in)
 
 ## Getting started
 The folder structure is arranged according to `semester/branch/subject_code+subject_name/file_name`
