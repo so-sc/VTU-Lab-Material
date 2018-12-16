@@ -42,10 +42,6 @@ $ pip install -r requirements.txt
 $ jupyter notebook
 ```
 ##### Warning :warning: : The above commands consider your pip to be for Python3
-## Contribution
-- Fork this repository
-- Download/Clone the forked repo into your local machine
-- Modify/Add Contents
-- Update the requirements.txt
-- Push your changes
-- Submit a PR 
+
+## Contributing
+Please read [CONTRIBUTING.md](https://github.com/so-sc/VTU-Lab-Material/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
