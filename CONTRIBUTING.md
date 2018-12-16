@@ -1,4 +1,4 @@
-Contributing
+Contributing [![SOSC](https://is.gd/visit_sosc_badge)](https://sosc.org.in)
 ============
 If you want to contribute to a project and make it better, your help is very welcome. Contributing is also a great way to learn more about social interaction on Github, new technologies and and their ecosystems and how to make constructive, helpful bug reports, feature requests and the noblest of all contributions: a good, clean pull request.
 
@@ -64,7 +64,7 @@ further defined and clarified by project maintainers.
 ### Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at [INSERT EMAIL ADDRESS]. All
+reported by contacting the project team. All
 complaints will be reviewed and investigated and will result in a response that
 is deemed necessary and appropriate to the circumstances. The project team is
 obligated to maintain confidentiality with regard to the reporter of an incident.
