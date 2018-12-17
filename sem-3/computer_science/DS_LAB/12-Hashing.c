@@ -35,7 +35,7 @@ void insertht(int key)
 	}
 	if(flag)
 	{
-		printf("Collision detechted and avoided by linear probing");
+		printf("Collision detected and avoided by linear probing");
 		flag=0;
 	}
 	ht[hi]=key;
