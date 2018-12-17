@@ -17,7 +17,7 @@ The folder structure is arranged according to `semester/branch/subject_code+subj
 .   .   .   .
 .   .   .   .
 ```
-If the Lab experiments contain more than one file, create a seprate sub directory for each experiment. eg `/semester/branch/subject_code_subject_name/experiment_no_experiment_name/filename`
+If the Lab experiments contain more than one file, create a separate sub directory for each experiment. eg `/semester/branch/subject_code_subject_name/experiment_no_experiment_name/filename`
 ```sh
 .
 ├── sem-7
