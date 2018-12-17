@@ -2,7 +2,10 @@ Contributing [![SOSC](https://is.gd/visit_sosc_badge)](https://sosc.org.in)
 ============
 If you want to contribute to a project and make it better, your help is very welcome. Contributing is also a great way to learn more about social interaction on Github, new technologies and and their ecosystems and how to make constructive, helpful bug reports, feature requests and the noblest of all contributions: a good, clean pull request.
 
-### How to make a clean pull request
+##### Want to contribute but new to Git and Github?
+- Check out _**https://gitme.js.org/**_ to make your very first PR!
+
+## How to make a clean Pull Request
 - Create a personal fork of the project on Github.
 - Clone the fork on your local machine. Your remote repo on Github is called `origin`.
 - Add the original repository as a remote called `upstream`.
@@ -18,7 +21,7 @@ If you want to contribute to a project and make it better, your help is very wel
 
 And last but not least: Always write your commit messages in the present tense. Your commit message should describe what the commit, when applied, does to the code – not what you did to the code.
 
-### Our Standards
+## Our Standards
 
 Examples of behavior that contributes to creating a positive environment
 include:
@@ -40,7 +43,7 @@ advances
 * Other conduct which could reasonably be considered inappropriate in a
   professional setting
 
-### Our Responsibilities
+## Our Responsibilities
 
 Project maintainers are responsible for clarifying the standards of acceptable
 behavior and are expected to take appropriate and fair corrective action in
@@ -61,7 +64,7 @@ address, posting via an official social media account, or acting as an appointed
 representative at an online or offline event. Representation of a project may be
 further defined and clarified by project maintainers.
 
-### Enforcement
+## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported by contacting the project team. All
@@ -74,7 +77,7 @@ Project maintainers who do not follow or enforce the Code of Conduct in good
 faith may face temporary or permanent repercussions as determined by other
 members of the project's leadership.
 
-### Attribution
+## Attribution
 
 This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
 available at [http://contributor-covenant.org/version/1/4][version]
