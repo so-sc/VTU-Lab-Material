@@ -12,7 +12,7 @@
     <button type="reset">Reset</button> 
   </form>
 
-  <script>
+  <script type="text/javascript">
     function vowel_num()
     {
       var str = document.getElementById('input').value;
@@ -26,7 +26,7 @@
           {
             if(str_v[i]=='a' || str_v[i]=='e' || str_v[i]=='i' || str_v[i]=='o' || str_v[i]=='u')
             {
-              alert("String:"+str+" Vowel:"+str_v[i]+" Position:"+i);
+              alert("String: "+str+" Vowel:"+str_v[i]+" Position: "+i);
               not_found = false;
               break;
             }
@@ -39,7 +39,7 @@
         {
           // Reverse input using built in function
           var rev_str = str.toString().split('').reverse().join('');
-          alert("The Number:-"+str+" The Reverse:-"+rev_str);
+          alert("The Number: "+str+" The Reverse: "+rev_str);
         }
     }
   </script>
