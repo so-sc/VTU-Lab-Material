@@ -1,5 +1,5 @@
-![](https://img.shields.io/badge/Managed%20by-Probot-blue.svg)
-# VTU Lab Material [![SOSC](https://is.gd/visit_sosc_badge)](https://sosc.org.in)
+# VTU Lab Material 
+[![SOSC](https://is.gd/visit_sosc_badge)](https://sosc.org.in) ![Probot](https://img.shields.io/badge/Managed%20by-Probot-blue.svg?style=for-the-badge)
 #### Collection of VTU laboratory easy solutions and related educational material maintained **by the students, for the students, to the students**. 💪🏻 
 
 ## Motivation
