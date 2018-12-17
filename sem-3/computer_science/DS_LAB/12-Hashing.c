@@ -7,7 +7,7 @@ Program in C that uses Hash Function H: K ®L as H(K)=K mod m (remainder method)
 #include<stdio.h>
 #include<stdlib.h>
 
-int key,m,n,*ht,hi,elec,flag;
+int key,m,*ht,hi,elec=0,flag=0;
 
 void createht()
 {
@@ -57,21 +57,21 @@ void displayht()
 
 void main()
 {
-	int i;
+	int i,n;
 	printf("Enter the number of employee records\n");
 	scanf("%d",&n);
 	printf("Enter the two digit memory location\n");
 	scanf("%d",&m);
+	if(m<n)
+    {
+    			printf("Not enough space in the hash table\n");
+    			return;
+    }
 	createht();
 	printf("Enter the four digit key values employee records\n");
 	for(i=0;i<n;i++)
 	{
 		scanf("%d",&key);
-		if(elec==m)
-		{
-			printf("Hash table is full\n");
-			return;
-		}
 		insertht(key);
 	}
 	displayht();
