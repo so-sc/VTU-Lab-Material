@@ -1,3 +1,4 @@
+![](https://img.shields.io/badge/Managed%20by-Probot-blue.svg)
 # VTU Lab Material [![SOSC](https://is.gd/visit_sosc_badge)](https://sosc.org.in)
 #### Collection of VTU laboratory easy solutions and related educational material maintained **by the students, for the students, to the students**. 💪🏻 
 
@@ -15,6 +16,18 @@ The folder structure is arranged according to `semester/branch/subject_code+subj
 │   │   │   ├── 01. Find-S Algorithm.py
 .   .   .   .
 .   .   .   .
+```
+If the Lab experiments contain more than one file, create a seprate sub directory for each experiment. eg `/semester/branch/subject_code_subject_name/experiment_no_experiment_name/filename`
+```sh
+.
+├── sem-7
+│   ├── computer_science
+│   │   ├── 15CSL77_WEB_PROGRAMMING_LABORATORY
+│   │   │   ├── 01 Calculator
+│   │   │   |   ├── index.html
+│   │   │   |   ├── style.css
+.   .   .   .   .
+.   .   .   .   .
 ```
 
 ## Contributing
