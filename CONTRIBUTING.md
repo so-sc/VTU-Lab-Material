@@ -25,7 +25,7 @@ If you want to contribute to a project and make it better, your help is very wel
   .   .   .   .
   .   .   .   .
   ```
-  If the Lab experiments contain more than one file, create a seprate sub directory for each experiment. eg `/semester/branch/subject_code_subject_name/experiment_no_experiment_name/filename`
+  If the Lab experiments contain more than one file, create a separate sub directory for each experiment. eg `/semester/branch/subject_code_subject_name/experiment_no_experiment_name/filename`
   ```sh
   .
   ├── sem-7
