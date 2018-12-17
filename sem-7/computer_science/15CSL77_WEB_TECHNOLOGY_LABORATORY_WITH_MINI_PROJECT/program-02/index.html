@@ -15,7 +15,11 @@
 	<script>
 		var result = '';
 		for(var num=1;num<=10;num++){
-			result +='<tr><td>'+num+'</td><td>'+num*num+'</td><td>'+num*num*num+'</td></tr>';
+			result += `<tr>
+					<td>${num}</td>
+					<td>${num*num}</td>
+					<td>${num*num*num}</td>
+				   </tr>`;
 		} 
 		document.getElementById("table").innerHTML += result;
 	</script>
