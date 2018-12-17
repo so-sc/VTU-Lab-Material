@@ -35,7 +35,7 @@ void insertht(int key)
 	}
 	if(flag)
 	{
-		printf("Collision detechtd and avoided by liner probing");
+		printf("Collision detechted and avoided by linear probing");
 		flag=0;
 	}
 	ht[hi]=key;
@@ -50,7 +50,7 @@ void displayht()
 		printf("Hash table is empty\n");
 		return;
 	}
-	printf("Hash table contents are:\n");
+	printf("Hash table contents are: \n");
 	for(i=0;i<m;i++)
 	printf("[%d]-->%d\n",i,ht[i]);
 }
@@ -58,17 +58,17 @@ void displayht()
 void main()
 {
 	int i,n;
-	printf("Enter the number of employee records\n");
+	printf("Enter the number of employee records: \n");
 	scanf("%d",&n);
-	printf("Enter the two digit memory location\n");
+	printf("Enter the two digit memory location: \n");
 	scanf("%d",&m);
 	if(m<n)
     {
-    			printf("Not enough space in the hash table\n");
+    			printf("Not enough space in the hash table!\n");
     			return;
     }
 	createht();
-	printf("Enter the four digit key values employee records\n");
+	printf("Enter the four digit key values employee records: \n");
 	for(i=0;i<n;i++)
 	{
 		scanf("%d",&key);
