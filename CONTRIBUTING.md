@@ -8,11 +8,36 @@ If you want to contribute to a project and make it better, your help is very wel
 ## How to make a clean Pull Request
 - Create a personal fork of the project on Github.
 - Clone the fork on your local machine. Your remote repo on Github is called `origin`.
-- Add the original repository as a remote called `upstream`.
-- If you created your fork a while ago be sure to pull upstream changes into your local repository.
+- Add the original repository as a remote called `upstream`. Read more about [setting up the upstream remotes](https://help.github.com/articles/configuring-a-remote-for-a-fork/).
+- If you created your fork a while ago be sure to pull upstream changes into your local repository. Read more about keeping your fork [in sync with remotes](https://help.github.com/articles/syncing-a-fork/).
 - Create a new branch to work on! Branch from e.g:`15CSL76` if it exists or any other valid `subject_code`, else from `master`.
 - Implement/fix your feature, comment your code in the valid directory with valid extensions. **Make sure the `subject_code+full_subject_name` folder name is in all CAPS.** e.g: `15CSL76_MACHINE_LEARNING_LABORATORY`
 - Follow the code style of the project, including indentation. Add or change the documentation as needed.
+- Make sure you have strictly followed the directory structure mentioned below.
+  The folder structure is arranged according to `semester/branch/subject_code+subject_name/file_name`
+  ```sh
+  .
+  ├── sem-7
+  │   ├── computer_science
+  │   │   ├── 15CSL76_MACHINE_LEARNING_LABORATORY
+  │   │   │   ├── 01. Find-S Algorithm.ipynb
+  │   │   │   ├── 01. Find-S Algorithm.py
+  .   .   .   .
+  .   .   .   .
+  ```
+  If the Lab experiments contain more than one file, create a separate sub directory for each experiment. eg `/semester/branch/subject_code_subject_name/experiment_no_experiment_name/filename`
+  ```sh
+  .
+  ├── sem-7
+  │   ├── computer_science
+  │   │   ├── 15CSL77_WEB_PROGRAMMING_LABORATORY
+  │   │   │   ├── 01 Calculator
+  │   │   │   |   ├── index.html
+  │   │   │   |   ├── style.css
+  .   .   .   .   .
+  .   .   .   .   .
+  ```
+
 - Squash your commits into a single commit with git's [interactive rebase](https://help.github.com/articles/interactive-rebase). Create a new branch if necessary.
 - Push your branch to your fork on Github, the remote `origin`.
 - From your fork open a pull request in the correct branch. Target the project's `subject_code` branch if there is one, else go for `master`!
