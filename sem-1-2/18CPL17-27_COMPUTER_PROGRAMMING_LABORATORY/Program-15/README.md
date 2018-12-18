@@ -18,7 +18,7 @@ $ ./a.out
 Enter the binary number to be converted: 1111101
 Decimal of 1111101 is: 125
 
-$ ./a.out
+$ ./a.out 
 
 Enter the binary number to be converted: 1001
 Decimal of 1001 is: 9
