@@ -25,5 +25,5 @@ int main()
 	decimal = bintodec(binary);
 	
 	printf("Decimal of %ld is: %ld\n\n", binary, decimal);
-	return 0;
+	return 0; 
 }
