@@ -40,7 +40,7 @@ main()
 	//Compute avg
 	avg = sum/n;
 	
-	printf("Average = %f\n\n", avg);
+	printf("Average = %f\n\n ", avg);
 	//Display based on the required output
 	printf("Details of students who scored above average:\n");
 	printf("Rollno\tName\tMarks\n");
