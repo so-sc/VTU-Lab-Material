@@ -5,15 +5,17 @@ Develop a program to find the square root of a given number N and execute foe al
 ## Output
 
 ```shell
-suhan@laptop:~/my_files/work/sosc/VTU-Lab-Material/sem-1-2/18CPL17-27_COMPUTER_PROGRAMMING_LABORATORY/Program-12$ gedit programe12.c
-suhan@laptop:~/my_files/work/sosc/VTU-Lab-Material/sem-1-2/18CPL17-27_COMPUTER_PROGRAMMING_LABORATORY/Program-12$ gcc program12.c
-suhan@laptop:~/my_files/work/sosc/VTU-Lab-Material/sem-1-2/18CPL17-27_COMPUTER_PROGRAMMING_LABORATORY/Program-12$ ./a.out
+$ gedit programe12.c
+$ gcc program12.c
+$ ./a.out
 Enter the number:25
 The square root of number 25.000000 = 5.000000
-suhan@laptop:~/my_files/work/sosc/VTU-Lab-Material/sem-1-2/18CPL17-27_COMPUTER_PROGRAMMING_LABORATORY/Program-12$ ./a.out
+
+$ ./a.out
 Enter the number:99
 The square root of number 99.000000 = 9.949875
-suhan@laptop:~/my_files/work/sosc/VTU-Lab-Material/sem-1-2/18CPL17-27_COMPUTER_PROGRAMMING_LABORATORY/Program-12$ ./a.out
+
+$ ./a.out
 Enter the number:12
 The square root of number 12.000000 = 3.464102
 ```
