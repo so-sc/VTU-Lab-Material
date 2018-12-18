@@ -1,7 +1,7 @@
 /*To implement pointers to compute sum, mean and standard deviation*/
 
 #include<stdio.h>
-#include<math.h> // Because sqrt() and pow() are used.
+#include<math.h> // Because sqrt() and pow() are used. 
 
 main()
 {
