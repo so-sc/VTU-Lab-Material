@@ -40,7 +40,7 @@ int main()
 	{
 		printf("%d\t", a[i]);
 	}	
-	printf("\n\n");
+	printf("\n\n"); 
 		
 	return 0;
 }
