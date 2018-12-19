@@ -28,6 +28,7 @@
     $ git clone https://github.com/so-sc/VTU-Lab-Material.git
     ``` 
 2. Open a terminal and type the below command to change directory into `VTU-Lab-Material/sem-1-2/18CPL17-27_COMPUTER_PROGRAMMING_LABORATORY`
+
     ```sh
     $ cd VTU-Lab-Material/sem-1-2/18CPL17-27_COMPUTER_PROGRAMMING_LABORATORY
     ```
