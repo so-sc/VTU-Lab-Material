@@ -5,5 +5,19 @@ An electricity board charges the following rates for the use of electricity: for
 ## Output
 
 ```shell
-# Paste the output here
+$ gedit program-05.c
+$ gcc program-05.c
+$ ./a.out
+
+Enter the name: Chuck
+Enter the no.of.units consumed: 100
+
+Name: Chuck 
+Units consumed: 100
+Charge = Rs 180.000000
+
 ```
+
+## Screenshot
+
+![image](https://user-images.githubusercontent.com/44167922/50256115-c7d81a00-041a-11e9-88cc-75172e510f01.png)
