@@ -13,7 +13,7 @@
 | Program-06 | Introduce 1D Array manipulation and implement Binary search. |
 | Program-07 | Implement using  functions  to  check  whether  the  given  number  is prime  and  display appropriate messages. (No built-in math function)|
 | Program-08 | Develop a program to introduce 2D Array manipulation and implement Matrix multiplication and ensure the rules of multiplication are checked.|
-| Program-09 | Find the transpose of a matrix. Develop a Program to compute Sin(x) using Taylor Series approximation. Compare your result with the built-in Library function. Print both the results with appropriate messages. |
+| Program-09 |Develop a Program to compute Sin(x) using Taylor Series approximation. Compare your result with the built-in Library function. Print both the results with appropriate messages. |
 | Program-10 | Write functions to implement string operations such as compare, concatenate, string length. Convince the parameter passing techniques. |
 | Program-11| Develop a program to sort the given set of N numbers using Bubble sort.|
 | Program-12 | Develop a program to find the square root of a given number N and execute foe all possible inputs with appropriate messages. Note: Don’t use library function sqrt(n). |

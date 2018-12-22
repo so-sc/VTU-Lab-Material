@@ -3,7 +3,7 @@
 Write functions to implement string operations such as compare, concatenate, string length. Convince the parameter passing techniques.
 
 ## Output
-
+ 
 ```shell
 $ gedit program-10.c
 $ gcc program-10.c

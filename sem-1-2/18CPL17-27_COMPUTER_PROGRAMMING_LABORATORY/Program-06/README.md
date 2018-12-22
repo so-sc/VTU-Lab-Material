@@ -2,7 +2,7 @@
 
 Introduce 1D Array manipulation and implement Binary search.
 
-## Output
+## Output 
 
 ```shell
 $ gedit program-06.c 

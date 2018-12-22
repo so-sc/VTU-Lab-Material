@@ -1,6 +1,6 @@
 # Program 09
 
-Develop a Program to compute Sin(x) using Taylor Series approximation. Compare your result with the built-in Library function. Print both the results with appropriate messages.
+Develop a Program to compute Sin(x) using Taylor Series approximation. Compare your result with the built-in Library function. Print both the results with appropriate messages. 
 
 ## Output
 

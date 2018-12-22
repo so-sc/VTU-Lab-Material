@@ -5,7 +5,7 @@ An electricity board charges the following rates for the use of electricity: for
 ## Output
 
 ```shell
-$ gedit program-05.c
+$ gedit program-05.c 
 $ gcc program-05.c
 $ ./a.out
 

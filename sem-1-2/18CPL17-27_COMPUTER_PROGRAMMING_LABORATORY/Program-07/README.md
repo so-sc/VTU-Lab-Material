@@ -4,7 +4,7 @@ Implement using functions to check whether the given number is prime and display
 
 ## Output
 
-```shell
+```shell 
 $ gedit program-07.c
 $ gcc program-07.c
 
