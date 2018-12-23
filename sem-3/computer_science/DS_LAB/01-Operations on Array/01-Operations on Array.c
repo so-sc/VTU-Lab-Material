@@ -13,7 +13,7 @@ void create()
 {
 	printf("Enter the size of array:");
 	scanf("%d",&n);
-	printf("\nEnter the elemtnts:\n");
+	printf("\nEnter the elements:\n");
 	for(i=0;i<n;i++)
 	{
 		scanf("%d",&a[i]);
@@ -22,7 +22,7 @@ void create()
 
 void display()
 {
-	printf("\nThe array elemtnts are:\n");
+	printf("\nThe array elements are:\n");
 	for(i=0;i<n;i++)
 	{
 		printf("%d\t",a[i]);
@@ -31,9 +31,9 @@ void display()
 
 void insert()
 {
-	printf("Enter the position of element to be inserted in an array:");
+	printf("Enter the position of element to be inserted in an array: ");
 	scanf("%d",&pos);
-	printf("\nEnter the element to be inserted in an array:");
+	printf("\nEnter the element to be inserted in an array: ");
 	scanf("%d",&item);
 	if(pos<=n-1)
 	{
@@ -69,29 +69,28 @@ void remove()
 }
 
 void main()
-{
+{       
 	int c;
 	clrscr();
 	do
 	{
-	printf("Enter operator:\n");
-	printf("***MENU***\n1.CREATE\t2.Display\t3.insert\t4.delete\t5.exit\n");
-	scanf("%d",&c);
+        	printf("Enter operator:\n");
+        	printf("***MENU***\n1.CREATE\t2.Display\t3.insert\t4.delete\t5.exit\n");
+        	scanf("%d",&c);
 
-	switch(c)
-	{
-	case 1: create();
-		break;
-	case 2: display();
-		break;
-	case 3: insert();
-		break;
-	case 4: remove();
-		break;
-	case 5: exit(0);
-	default:printf("invald operator");
-		break;
-	}
+         	switch(c)
+        	{
+          		case 1: create();
+	                	break;
+                        case 2: display();
+         	        	break;
+                 	case 3: insert();
+        	        	break;
+                 	case 4: remove();
+	                 	break;
+                	case 5: exit(0);
+                	default:printf("invald operator");
+        	}
 	}while(c!=5);
 	getch();
 }
