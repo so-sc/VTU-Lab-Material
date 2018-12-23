@@ -2,7 +2,7 @@
 void main()
 {
 	int num, rev=0, temp, rem;
-	printf("Enter a number: ");
+	printf("\nEnter a number: ");
 	scanf("%d",&num);
 	temp = num;
 	while (temp!=0)
@@ -11,11 +11,14 @@ void main()
 		temp = temp / 10;
 		rev = rev * 10 + rem;
 	}
+	
+	printf("The reversed number is: %d\n", rev);
+	
 	if(rev == num)
 	{
-		printf("Is a palindrome: %d\n", num);
+		printf("Is a palindrome\n\n");
 	}else
 		{
-			printf("Not a palindrome\n");
+			printf("It is not a palindrome\n\n");
 		}
 }
