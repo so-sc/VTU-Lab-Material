@@ -31,8 +31,10 @@ Support the program with appropriate functions for each of the above operations 
 Expression. Program should support for both parenthesized and free parenthesized expressions with the
 operators: +, -, *, /, %( Remainder), ^ (Power) and alphanumeric operands.
 |
-| Program-05 | Design, Develop and Implement a Program in C for the following Stack Applications a. Evaluation of
-Suffix expression with single digit operands and operators: +, -, *, /, %, ^ b. Solving Tower of Hanoi
+| Program-05 | Design, Develop and Implement a Program in C for the following Stack Applications 
+a. Evaluation of
+Suffix expression with single digit operands and operators: +, -, *, /, %, ^ 
+b. Solving Tower of Hanoi
 problem with n disks.|
 | Program-06 | Design, Develop and Implement a menu driven Program in C for the following operations on Circular
 QUEUE of Characters (Array Implementation of Queue with maximum size MAX)
@@ -58,7 +60,7 @@ b. Display the status of DLL and count the number of nodes in it
 c. Perform Insertion and Deletion at End of DLL
 d. Perform Insertion and Deletion at Front of DLL
 e. Demonstrate how this DLL can be used as Double Ended Queue
-f. Exit|
+f. Exit |
 | Program-09 |Design, Develop and Implement a Program in C for the following operations on Singly Circular
 Linked List (SCLL) with header nodes
 a. Represent and Evaluate a Polynomial P(x,y,z) = 6x2y2z-4yz5+3x3yz+2xy5z-2xyz3
@@ -72,11 +74,11 @@ a. Create a BST of N Integers: 6, 9, 5, 2, 8, 15, 24, 14, 7, 8, 5, 2
 b. Traverse the BST in Inorder, Preorder and Post Order
 c. Search the BST for a given element (KEY) and report the appropriate message
 d. Delete an element(ELEM) from BST
-a. e. Exit |
+e. Exit |
 | Program-11| Design, Develop and Implement a Program in C for the following operations on Graph(G) of Cities
 a. Create a Graph of N cities using Adjacency Matrix.
 b. Print all the nodes reachable from a given starting node in a digraph using BFS method
-b. c. Check whether a given graph is connected or not using DFS method.|
+c. Check whether a given graph is connected or not using DFS method.|
 | Program-12 | Given a File of N employee records with a set K of Keys(4-digit) which uniquely determine the records
 in file F. Assume that file F is maintained in memory by a Hash Table(HT) of m memory locations
 with L as the set of memory addresses (2-digit) of locations in HT. Let the keys in K and addresses in L
