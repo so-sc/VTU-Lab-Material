@@ -1,4 +1,4 @@
-#Program 12
+# Program 12
 Given a File of N employee records with a set K of Keys(4-digit) which uniquely determine the records
 in file F. Assume that file F is maintained in memory by a Hash Table(HT) of m memory locations
 with L as the set of memory addresses (2-digit) of locations in HT. Let the keys in K and addresses in L
@@ -6,7 +6,7 @@ are Integers. Design and develop a Program in C that uses Hash function H: K ®L
 (remainder method), and implement hashing technique to map a given key K to the address space L.
 Resolve the collision (if any) using linear probing.
 
-##OUTPUT:
+## OUTPUT:
 ```shell
 
 Enter the number of employee records
