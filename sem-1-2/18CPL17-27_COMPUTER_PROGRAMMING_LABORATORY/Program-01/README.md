@@ -35,7 +35,7 @@ Remainder = 1
 ```
 
 ## Screenshot
-[calculator](https://user-images.githubusercontent.com/44167922/50517635-37af6a00-0ad7-11e9-945b-a7d074fef98d.png)
+![calculator](https://user-images.githubusercontent.com/44167922/50517635-37af6a00-0ad7-11e9-945b-a7d074fef98d.png)
 
 ## Concept used:
 
