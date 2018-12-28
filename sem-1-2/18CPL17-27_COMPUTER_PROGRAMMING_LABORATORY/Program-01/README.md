@@ -44,6 +44,6 @@ Remainder = 1
 
 ## Links for reference:
 
-![newBoston](https://www.youtube.com/watch?v=qZRP5hKGHrs&list=PL6gx4Cwl9DGAKIXv8Yr6nhGJ9Vlcjyymq&index=31);
+Understand switching in c at ![newBoston](https://www.youtube.com/watch?v=qZRP5hKGHrs&list=PL6gx4Cwl9DGAKIXv8Yr6nhGJ9Vlcjyymq&index=31)
 
 
