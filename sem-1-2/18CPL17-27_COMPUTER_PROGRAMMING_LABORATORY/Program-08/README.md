@@ -42,3 +42,8 @@ Matrices are incompatible!, try again.
 <br>
 
 ![image](https://user-images.githubusercontent.com/44167922/50380645-40e1a680-0693-11e9-8a7d-d4b4d7ac1770.png)
+
+## Concept used:
+
+- 2D Array Manipulation
+
