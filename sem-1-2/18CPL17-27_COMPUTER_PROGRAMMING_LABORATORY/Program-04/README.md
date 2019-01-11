@@ -24,3 +24,12 @@ Is a palindrome
 
 ![palindrome](https://user-images.githubusercontent.com/44167922/50380752-6cff2680-0697-11e9-98de-b3f53af96f38.png)
 
+## Concept used:
+
+- while loops
+- if conditions
+
+## Links for reference:
+
+Understand while-loops in c at [newBoston](https://www.youtube.com/watch?v=7pAXm7WEA2I&list=PL6gx4Cwl9DGAKIXv8Yr6nhGJ9Vlcjyymq&index=25"Link to YouTube video")
+

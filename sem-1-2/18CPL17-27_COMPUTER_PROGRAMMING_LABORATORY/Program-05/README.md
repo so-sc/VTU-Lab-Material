@@ -21,3 +21,11 @@ Charge = Rs 180.000000
 ## Screenshot
 
 ![image](https://user-images.githubusercontent.com/44167922/50256115-c7d81a00-041a-11e9-88cc-75172e510f01.png)
+
+## Concept used:
+
+- if-else conditions
+
+## Links for reference:
+
+Understand if-else in c at [newBoston](https://www.youtube.com/watch?v=KgVzRmUPsdo&index=19&list=PL6gx4Cwl9DGAKIXv8Yr6nhGJ9Vlcjyymq "Link to YouTube video")
