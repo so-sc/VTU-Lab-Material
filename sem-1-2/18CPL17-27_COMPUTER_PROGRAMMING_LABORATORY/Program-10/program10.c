@@ -1,87 +1,46 @@
-/*To implement user-defined function for string functions*/
+/*Program to implement bubble sort*/
 
 #include<stdio.h>
 
-int slen(char s[])
+int main()
 {
-	/*To compute the string length*/
+	int a[100], n, i, j, t;
 	
-	int i, len = 0;
-	for(i = 0; s[i] != '\0'; i++)
+	printf("\nEnter the number of elements: ");
+	scanf("%d", &n);
+	printf("Enter the array: \n");
+	for(i = 0; i<n ; i++)
 	{
-		len++;
+		scanf("%d", &a[i]);
+	}	
+	
+	printf("\nThe given array is: \n");
+	for(i = 0; i<n ; i++)
+	{
+		printf("%d\t", a[i]);
 	}
 	
-	return len;
-}
-
-int scomp(char s1[], char s2[])
-{
-	/*To check and compare the strings*/
-	
-	int i, j;
-	
-	if(slen(s1) != slen(s2))
+	//Bubble sorting
+	for(i=1; i<n ; i++)
 	{
-		return 0;
-	}
-	
-	for(i=0; s1[i] != '\0'; i++)
-	{
-		if(s1[i] != s2[i])
+		for(j=0;j<n-1;j++)
 		{
-			return 0;
+			if(a[j] > a[j+1])
+			{
+				//Swapping the right adjacent number
+				t = a[j];
+				a[j] = a[j+1];
+				a[j+1] = t;
+			}
 		}
 	}
 	
-	return 1;
-}
-
-int scat(char s1[], char s2[])
-{
-	/*To concatenate 2 strings*/	
-	
-	int i, j;
-	
-	for(i = slen(s1), j=0; s2[j] != '\0'; i++, j++)
+	printf("\nArray after bubble sorting is:\n");
+	for(i = 0; i<n ; i++)
 	{
-		s1[i] = s2[j];
-	}
-	
-	//Assigning last element of string as null, to indicate end of string
-	s1[i] = '\0';
-	
+		printf("%d\t", a[i]);
+	}	
+	printf("\n\n"); 
+		
 	return 0;
-}
-
-int main()
-{
-	char s1[200], s2[200];
-	
-	//using gets() is fine as long as newline character(enter key) is pressed. 
-	printf("Enter String 1:");
-	gets(s1);
-	printf("Enter String 2:");
-	gets(s2);
-	
-	printf("\nLength of String 1: %d", slen(s1));
-	printf("\nLength of String 2: %d", slen(s2));
-	
-	//Comparing s1, s2
-	if(scomp(s1, s2))
-	{
-		printf("\nThe strings '%s', '%s' are equal.", s1, s2);
-	}
-	else
-	{
-		printf("\nThe strings '%s', '%s' are not equal.", s1, s2);
-	}
-	
-	//Concatinating s1, s2
-	scat(s1, s2);
-	
-	printf("\nThe concatenated string is: %s\n", s1);
-	
-	return 0;
-
 }

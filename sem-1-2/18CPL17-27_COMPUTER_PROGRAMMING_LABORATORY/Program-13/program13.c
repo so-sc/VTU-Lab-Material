@@ -1,64 +1,46 @@
-/*To implement stucture of student records*/
+/*To implement pointers to compute sum, mean and standard deviation*/
+
 #include<stdio.h>
-
-struct Student
-{
-	int rollno;
-	char name[30];
-	float marks;
-};
-
+#include<math.h> // Because sqrt() and pow() are used. 
 
 main()
 {
-	struct Student S[100];
-	int n,i;
-	float sum, avg;
-	
-	printf("Enter the number of students:");
+	float a[100], *p, sum, mean, sd, res;
+	int n, i;
+	printf("Enter the number of elements: ");
 	scanf("%d", &n);
-	
-	//Input details into records
-	printf("Enter the details:\n");
+	printf("Enter the elements:\n");
 	for(i=0;i<n;i++)
 	{
-		printf("\nEnter student %d:\n", i+1);
-		printf("Enter name: ");
-		scanf("%s", &S[i].name);
-		printf("Enter rollno: ");
-		scanf("%d", &S[i].rollno);
-		printf("Enter marks: ");
-		scanf("%f", &S[i].marks);
-	}
+		scanf("%f", &a[i]);
+	} 	
 	
-	//Compute sum
+	sum = 0;
+	res = 0;
+	p = a;
+	
 	for(i=0;i<n;i++)
 	{
-		sum += S[i].marks; // sum = sum + S[i].marks
+		sum += *p; //sum = sum + *p;
+		p++;
 	}
 	
-	//Compute avg
-	avg = sum/n;
+	mean = sum/n;
 	
-	printf("Average = %f\n\n ", avg);
-	//Display based on the required output
-	printf("Details of students who scored above average:\n");
-	printf("Rollno\tName\tMarks\n");
+	// re-assigning p = a because from previous loop, value of p gets updated.
+		p = a; 
+	
+	// Computing standard deviation 'sd'
 	for(i=0;i<n;i++)
 	{
-		if(S[i].marks>avg)
-		{
-			printf("%d\t%s\t%f \n", S[i].rollno, S[i].name, S[i].marks);
-		}
+		res += pow((*p - mean), 2); // res = res + pow((*p - mean), 2);
+		p++;
 	}
 	
-	printf("Details of students who scored below or equal to average:\n");
-	printf("Rollno\tName\tMarks\n");
-	for(i=0;i<n;i++)
-	{
-		if(S[i].marks<=avg)
-		{
-			printf("%d\t%s\t%f \n", S[i].rollno, S[i].name, S[i].marks);
-		}
-	}
+	res /= n; // res = res/n;
+	sd = sqrt(res);
+	
+	printf("Sum = %f", sum);
+	printf("\nMean = %f", mean);
+	printf("\nStandard deviation = %f\n\n", sd);	
 }

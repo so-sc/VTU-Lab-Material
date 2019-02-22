@@ -1,46 +1,29 @@
-/*To implement pointers to compute sum, mean and standard deviation*/
+/*To implement recursive function to convert binary to decimal*/
 
 #include<stdio.h>
-#include<math.h> // Because sqrt() and pow() are used. 
 
-main()
+int bintodec(long int binary)
 {
-	float a[100], *p, sum, mean, sd, res;
-	int n, i;
-	printf("Enter the number of elements: ");
-	scanf("%d", &n);
-	printf("Enter the elements:\n");
-	for(i=0;i<n;i++)
+	if(binary == 0)
 	{
-		scanf("%f", &a[i]);
-	} 	
-	
-	sum = 0;
-	res = 0;
-	p = a;
-	
-	for(i=0;i<n;i++)
-	{
-		sum += *p; //sum = sum + *p;
-		p++;
+		return 0;
 	}
-	
-	mean = sum/n;
-	
-	// re-assigning p = a because from previous loop, value of p gets updated.
-		p = a; 
-	
-	// Computing standard deviation 'sd'
-	for(i=0;i<n;i++)
-	{
-		res += pow((*p - mean), 2); // res = res + pow((*p - mean), 2);
-		p++;
+	else 
+	{	
+		//Conversion to decimal.
+		return(binary%10 + 2*bintodec(binary/10)); 
 	}
+}
+
+int main()
+{
+	long int binary, decimal;
+	printf("\nEnter the binary number to be converted: ");
+	scanf("%ld", &binary);
 	
-	res /= n; // res = res/n;
-	sd = sqrt(res);
+	//Calling function
+	decimal = bintodec(binary);
 	
-	printf("Sum = %f", sum);
-	printf("\nMean = %f", mean);
-	printf("\nStandard deviation = %f\n\n", sd);	
+	printf("Decimal of %ld is: %ld\n\n", binary, decimal);
+	return 0; 
 }

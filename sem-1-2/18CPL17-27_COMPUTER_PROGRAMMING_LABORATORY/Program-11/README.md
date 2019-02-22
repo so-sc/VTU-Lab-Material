@@ -1,26 +1,24 @@
 # Program 11
 
-Develop a program to sort the given set of N numbers using Bubble sort.
+Develop a program to find the square root of a given number N and execute foe all possible inputs with appropriate messages. Note: Don’t use library function sqrt(n).
 
 ## Output
 
 ```shell
-$ gedit program11.c
+$ gedit programe11.c
 $ gcc program11.c
 $ ./a.out
+Enter the number:25
+The square root of number 25.000000 = 5.000000
 
-Enter the number of elements: 5
-Enter the array: 
+$ ./a.out
+Enter the number:99
+The square root of number 99.000000 = 9.949875
 
-8 3 15 99 26
-
-The given array is: 
-8	3	15	99	26	
-Array after bubble sorting is:
-3	8	15	26	99	
-
-``` 
+$ ./a.out
+Enter the number:12
+The square root of number 12.000000 = 3.464102
+```
 
 ## Screenshot
-
-![image](https://user-images.githubusercontent.com/44167922/50185185-275ff800-033d-11e9-8c6c-da72b7a401d7.png)
+![image](https://user-images.githubusercontent.com/44167922/50125916-ca0e6d00-0290-11e9-912d-1e94608acb11.png)

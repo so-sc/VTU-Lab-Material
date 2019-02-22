@@ -1,46 +1,26 @@
-/*Program to implement bubble sort*/
+/*Program to find square root of a number without sqrt(n)*/
 
 #include<stdio.h>
 
 int main()
 {
-	int a[100], n, i, j, t;
+	float x, n;
+	int i;
 	
-	printf("\nEnter the number of elements: ");
-	scanf("%d", &n);
-	printf("Enter the array: \n");
-	for(i = 0; i<n ; i++)
-	{
-		scanf("%d", &a[i]);
-	}	
+	printf("Enter the number:");
+	scanf("%f", &n);
 	
-	printf("\nThe given array is: \n");
-	for(i = 0; i<n ; i++)
+	// storing back-up
+	x = n; 
+	
+	//Compute square root using newton-raphson method
+	for(i = 0; i<10 ; i++)
 	{
-		printf("%d\t", a[i]);
+		x = (x*x + n)/(2*x);
 	}
 	
-	//Bubble sorting
-	for(i=1; i<n ; i++)
-	{
-		for(j=0;j<n-1;j++)
-		{
-			if(a[j] > a[j+1])
-			{
-				//Swapping the right adjacent number
-				t = a[j];
-				a[j] = a[j+1];
-				a[j+1] = t;
-			}
-		}
-	}
+	//Display Square root
+	printf("The square root of number %f = %f\n", n, x);
 	
-	printf("\nArray after bubble sorting is:\n");
-	for(i = 0; i<n ; i++)
-	{
-		printf("%d\t", a[i]);
-	}	
-	printf("\n\n"); 
-		
-	return 0;
+	
 }

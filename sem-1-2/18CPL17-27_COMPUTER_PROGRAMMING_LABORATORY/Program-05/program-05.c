@@ -1,63 +1,52 @@
-/*To implement an electricity bill*/
+/*To implement binary search technique in 1D Array*/
 
 #include<stdio.h>
 
 int main()
 {
-	float charge;
-	int units;
-	char name[25];
+	int a[100], n, f, mid, l, i, key, flag = 0;
 	
-	//Input required	
-	printf("\nEnter the name: ");
-	scanf("%s", &name);
-	printf("Enter the no.of.units consumed: ");
-	scanf("%d", &units);
-	
-	//Compute charge
-	if(units<=200)
+	printf("\nEnter the number of elements: ");
+	scanf("%d", &n);
+	printf("Enter the Array in ascending order:\n");
+	for(i=0;i<n;i++)
 	{
-		charge = units*0.8;
+		scanf("%d", &a[i]);
 	}
-	else if(units<=300)
+	
+	printf("Enter the key to be searched: ");
+	scanf("%d", &key);
+	
+	f = 0;
+	l = n - 1;
+	
+	while(f<=l)
+	{
+		mid = (f + l)/2;
+		if(a[mid] == key)
 		{
-			/*
-			
-			From previous if(), we have determined that units>200, 
-			but we should charge only 80p for first 200 units, so 200*0.8 = 160
-			and the next hundred units to be charged 90p, 
-			so no.of units to be charged 90p = units - 300
-			
-			*/
-			charge = 160 + (units-200)*0.9;	
+			flag = 1;
+			break;
 		}
-		else
-		{	
-			/*
-			
-			From previous if(), we have determined that units>300, 
-			but we should charge only 80p for first 200 units and 90p for next 100, so 200*0.8 + 100*0.9= 250
-			and the next units to be charged Rs.1, 
-			so no.of units to be charged Rs.1 = units - 300
-			
-			*/
-			charge = 250 + (units - 300)*1;
-		}
-	
-	//Additional meter charge
-	charge += 100;
-	
-	//Additional 15% tax
-	if(charge > 400)
-	{
-		charge = charge +charge*0.15;
+		else if(a[mid]<key)
+			{
+				f = mid + 1;
+			}
+		else 
+			{
+				l = mid - 1;
+			}
 	}
 	
-	//Required Output
-	printf("\nName: %s ", name);
-	printf("\nUnits consumed: %d", units);
-	printf("\nCharge = Rs %f\n", charge);
+	if(flag)
+	{
+		printf("\nKey is available at %d location.\n", mid + 1);
+	}
+	else
+	{
+		printf("Key is not Found.\n");
+	}
 	
-	return 0;
-
+	return 0;	
 }
+
