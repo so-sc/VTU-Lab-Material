@@ -1,17 +1,37 @@
-[![SOSC](https://is.gd/visit_sosc_badge)](https://sosc.org.in)
-# VTU Lab Material
-#### Ever had trouble getting the right VTU lab material to study from? Well look no further here's a collection of all resources required gathered under one roof!
+# VTU Lab Material 
+[![SOSC](https://is.gd/visit_sosc_badge)](https://sosc.org.in) ![Probot](https://img.shields.io/badge/Managed%20by-Probot-blue.svg?style=for-the-badge)
+#### Collection of VTU laboratory easy solutions and related educational material maintained **by the students, for the students, to the students**. 💪🏻 
 
+## Motivation
+Ever had trouble getting the right VTU lab material to study from? Well, look no further! here's a collection of all resources required, gathered and verified with by the respective laboratory incharge, by the students over at [Sahyadri Open Source Community](https://sosc.org.in)
 
-# Contributing
-To contribute to the project, Please take up the tasks specified in the issues. Add a comment in the issues if you are taking up one. 
+## Getting started
+The folder structure is arranged according to `semester/branch/subject_code+subject_name/file_name`
+```sh
+.
+├── sem-7
+│   ├── computer_science
+│   │   ├── 15CSL76_MACHINE_LEARNING_LABORATORY
+│   │   │   ├── 01. Find-S Algorithm.ipynb
+│   │   │   ├── 01. Find-S Algorithm.py
+.   .   .   .
+.   .   .   .
+```
+If the Lab experiments contain more than one file, create a separate sub directory for each experiment. eg `/semester/branch/subject_code_subject_name/experiment_no_experiment_name/filename`
+```sh
+.
+├── sem-7
+│   ├── computer_science
+│   │   ├── 15CSL77_WEB_PROGRAMMING_LABORATORY
+│   │   │   ├── 01 Calculator
+│   │   │   |   ├── index.html
+│   │   │   |   ├── style.css
+.   .   .   .   .
+.   .   .   .   .
+```
 
-### Instructions
-- Fork the repository to your account.
-- Copy the clone url of your repository.
-- Clone the repository to your machine `git clone https://github.com/YOUR_USER_NAME/VTU-Lab-Material.git` 
-- Make sure you create a branch with the name as the issue you are working on `git checkout -b YOUR_BRANCH_NAME`, and make sure you are working on the same branch and not the `master`, run `git status` to know which branch you are working on, run `git branch`, your branch will be highlighted with an `*`. If you are not in your branch or want to move to another branch use `git checkout BRANCH_NAME`. 
-a good branch name should explain what this branch is about eg. `sem-5_CompterSciendce_DBMS` etc.
-- Add the upstream url of original repository, follow the instructions [here](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
-- Make sure your repository is in sync with the original repository's master branch. Follow the instruction [here](https://help.github.com/articles/syncing-a-fork/) to know how to keep your local repository in sync.
-- Finally when you have made the changes, submit a pull request through github from the original repository, choose your branch against the master of original or create a new branch.
+## Contributing
+Please read [CONTRIBUTING.md](https://github.com/so-sc/VTU-Lab-Material/blob/master/CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
+## License
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](https://github.com/so-sc/VTU-Lab-Material/blob/master/LICENSE) file for more details.

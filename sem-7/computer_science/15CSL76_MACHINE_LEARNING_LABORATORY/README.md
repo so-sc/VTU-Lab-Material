@@ -1,7 +1,7 @@
 # Machine Learning Laboratory 15CSL76
 ![Python](https://img.shields.io/pypi/pyversions/Django.svg?logo=python&logoColor=white&style=for-the-badge) [![SOSC](https://is.gd/visit_sosc_badge)](https://sosc.org.in)
 
-[![Binder](https://img.shields.io/badge/Launch-Binder-blue.svg?logo=jupyter&logoColor=white&style=for-the-badge)](https://mybinder.org/v2/gh/Hitoshirenu/VTU-Lab-Material/master)
+[![Binder](https://img.shields.io/badge/Launch-Binder-blue.svg?logo=jupyter&logoColor=white&style=for-the-badge)](https://mybinder.org/v2/gh/so-sc/VTU-Lab-Material/master)
 
 #### The following programs can be run online on a jupyter notebook in your browser.
 
@@ -13,7 +13,7 @@
 ##### Click [here](https://www.cheatography.com/weidadeyue/cheat-sheets/jupyter-notebook/#downloads) to know about how to use a Jupyter Notebook and  [here](https://mybinder.readthedocs.io/en/latest/faq.html) to know more about Binder
 
 ## Packages and Dependencies
-The following listed packages and instructions are given with assumption that you have a PC with Python2 or Python3 already installed
+The following listed packages and instructions are given with assumption that you have a PC with Python3 already installed
 
 | Package | Documentation |
 | ------ | ------ |
@@ -25,13 +25,13 @@ The following listed packages and instructions are given with assumption that yo
 
 ## Local Installation
 Run the following commands for installation on you local machine 
-1. Click [here](https://github.com/Hitoshirenu/VTU-Lab-Material/archive/master.zip) to download the repository and unzip it or run the below command
+1. Click [here](https://github.com/so-sc/VTU-Lab-Material/archive/master.zip) to download the repository and unzip it or run the below command
 ```sh
-$ git clone https://github.com/Hitoshirenu/VTU-Lab-Material.git
+$ git clone https://github.com/so-sc/VTU-Lab-Material.git
 ```
 2. Change to the following folder ``` sem-7/computer_science/15CS76L_MACHINE_LEARNING_LABORATORY/ ``` and run 
 ```sh
-$ cd sem-7/computer_science/15CSL_MACHINE_LEARNING_LABORATORY/
+$ cd VTU-Lab-Material/sem-7/computer_science/15CSL_MACHINE_LEARNING_LABORATORY/
 ```
 3. Install all the required packages
 ```sh
@@ -42,10 +42,6 @@ $ pip install -r requirements.txt
 $ jupyter notebook
 ```
 ##### Warning :warning: : The above commands consider your pip to be for Python3
-## Contribution
-- Fork this repository
-- Download/Clone the forked repo into your local machine
-- Modify/Add Contents
-- Update the requirements.txt
-- Push your changes
-- Submit a PR 
+
+## Contributing
+Please read [CONTRIBUTING.md](https://github.com/so-sc/VTU-Lab-Material/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.

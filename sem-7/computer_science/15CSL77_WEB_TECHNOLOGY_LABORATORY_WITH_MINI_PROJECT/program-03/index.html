@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Growing and Skrinking Text</title>
+</head>
+<body>
+	<h1 align="center" style="font-size: 5px; color: red;" id="text"></h1>
+
+	<script type="text/javascript">
+		var text = document.getElementById("text");
+		var font = 5;
+		var flag = 0;
+		function inc(){
+			text.style.fontSize = font++;
+			text.style.color = "red";
+			text.innerHTML ="TEXT-GROWING";
+			if(font==50){
+				flag=1;
+			}
+		}
+		function dec(){
+			text.style.fontSize = font--;
+			text.style.color = "blue";
+			text.innerHTML="TEXT-SHRINKING";
+			if(font==5){
+				flag=0;
+			}
+		}
+		var time = setInterval(function(){
+			if(flag==1){
+				dec();
+			}
+			if(flag==0){
+				inc();
+			}
+		}, 100);
+	</script>
+</body>
+</html>
