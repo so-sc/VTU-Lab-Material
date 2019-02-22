@@ -1,49 +1,33 @@
 # Program 08
 
-Develop a program to introduce 2D Array manipulation and implement Matrix multiplication and ensure the rules of multiplication are checked.
+Develop a Program to compute Sin(x) using Taylor Series approximation. Compare your result with the built-in Library function. Print both the results with appropriate messages. 
 
 ## Output
 
 ```shell
-$ gedit program-08.c 
-$ gcc program-08.c 
+$ gedit program-08.c
+$ gcc program-08.c
 
 $ ./a.out
-
-Enter order of Matrix 1: 2 2
-Enter order of Matrix 2: 2 2
-
-Enter the elements of matrix 1:
-1 2
-3 4
-
-Enter the elements of matrix 2:
-5 6
-7 8
-
-Product of matrices are: 
-19	22	
-43	50	
-
+Enter the value in degrees: 90
+Enter the number of terms in Taylor series expansion: 10
+Calculated = 1.000000
+Builtin function = 1.000000
 
 $ ./a.out
+Enter the value in degrees: 45
+Enter the number of terms in Taylor series expansion: 10
+Calculated = 0.707107
+Builtin function = 0.707107
 
-Enter order of Matrix 1: 10 3
-Enter order of Matrix 2: 4 10
-
-Matrices are incompatible!, try again.
+$ ./a.out
+Enter the value in degrees: 73
+Enter the number of terms in Taylor series expansion: 10
+Calculated = 0.956305
+Builtin function = 0.956305
 
 ```
 
 ## Screenshot
 
-![image](https://user-images.githubusercontent.com/44167922/50380630-c749b880-0692-11e9-9b77-d0345abbb41b.png)
-
-<br>
-
-![image](https://user-images.githubusercontent.com/44167922/50380645-40e1a680-0693-11e9-8a7d-d4b4d7ac1770.png)
-
-## Concept used:
-
-- 2D Array Manipulation
-
+![image](https://user-images.githubusercontent.com/44167922/50373329-75a61d00-0603-11e9-9a73-7b8a323e3e02.png)

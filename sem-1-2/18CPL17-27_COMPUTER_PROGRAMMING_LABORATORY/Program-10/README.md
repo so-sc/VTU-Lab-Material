@@ -1,35 +1,26 @@
 # Program 10
 
-Write functions to implement string operations such as compare, concatenate, string length. Convince the parameter passing techniques.
+Develop a program to sort the given set of N numbers using Bubble sort.
 
 ## Output
- 
+
 ```shell
-$ gedit program-10.c
-$ gcc program-10.c
-
+$ gedit program10.c
+$ gcc program10.c
 $ ./a.out
-Enter String 1:CPL
-Enter String 2:CPL
 
-Length of String 1: 3
-Length of String 2: 3
-The strings 'CPL', 'CPL' are equal.
-The concatenated string is: CPLCPL
+Enter the number of elements: 5
+Enter the array: 
 
-$ ./a.out
-Enter String 1:CPL
-Enter String 2:PCD
+8 3 15 99 26
 
-Length of String 1: 3
-Length of String 2: 3
-The strings 'CPL', 'PCD' are not equal.
-The concatenated string is: CPLPCD
+The given array is: 
+8	3	15	99	26	
+Array after bubble sorting is:
+3	8	15	26	99	
 
-```
+``` 
 
 ## Screenshot
 
-![image](https://user-images.githubusercontent.com/44167922/50373692-b05e8400-0608-11e9-99b3-3e4fdbf0c0e1.png)
-
-
+![image](https://user-images.githubusercontent.com/44167922/50185185-275ff800-033d-11e9-8c6c-da72b7a401d7.png)

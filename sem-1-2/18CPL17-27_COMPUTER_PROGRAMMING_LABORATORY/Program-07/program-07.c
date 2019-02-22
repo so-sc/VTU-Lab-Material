@@ -1,52 +1,72 @@
-/*To implement functions to check if a number is prime or not*/
+/*To compute product of two matrices by 2D Array manipulation*/
 
 #include<stdio.h>
-
-int isprime(int n)
-{
-	/*
-		Function that returns
-		0 --> when n is not a prime
-		1 --> when n is a prime
-	*/
-	
-	int i;
-	if(n == 1 || n == 0)
-	{
-		return 0;
-	}
-	
-	/*Check only till n/2 because numbers > n/2 will never divide n*/
-	for(i = 2; i<n/2; i++)
-	{
-		if(n%i == 0)
-		{
-			return 0;
-		}
-	}
-	
-	return 1;
-}
+#include<stdlib.h> //For using exit(0);
 
 int main()
 {
-	int f, n; //Works only for small integers, i.e n<32767
-		
-	printf("Enter the number: ");
-	scanf("%d", &n);
+	int m1[20][20], m2[20][20], m3[20][20], m, n, p, q, i, j, k;
 	
-	//Assigning f as 0 or 1
-	f = isprime(n);
+	printf("\nEnter order of Matrix 1: ");
+	scanf("%d%d", &m, &n);
+	printf("Enter order of Matrix 2: ");
+	scanf("%d%d", &p, &q);
 	
-	
-	//Same as if(f == 1)
-	if(f)
+	if(n == p)
 	{
-		printf("%d is a prime.\n", n);
+		printf("\nEnter the elements of matrix 1:\n");
+		for(i=0; i<m; i++)
+		{
+			for(j=0; j<n; j++)
+			{
+				scanf("%d", &m1[i][j]);
+			}
+		}
+		
+		printf("\nEnter the elements of matrix 2:\n");
+		for(i=0; i<p; i++)
+		{
+			for(j=0; j<q; j++)
+			{
+				scanf("%d", &m2[i][j]);
+			}
+		}
+		
+		//Compute product matrix
+		
+		for(i=0; i<m; i++)
+		{	
+			for(j=0; j<q; j++)
+			{
+				m3[i][j] = 0;
+				
+				for(k=0; k<n; k++)
+				{
+					m3[i][j] = m3[i][j] + m1[i][k]*m2[k][j];
+				}	
+			}
+		}
+		
+		
+		printf("\nProduct of matrices are: \n");
+		
+		for(i=0; i<m; i++)
+		{
+			for(j=0; j<q; j++)
+			{
+				printf("%d\t", m3[i][j]);
+			}
+			
+			printf("\n");
+		}
+			
 	}
 	else
 	{
-		printf("%d is not a prime.\n", n);
+		printf("\nMatrices are incompatible!, try again.\n\n");
+		exit(0);
 	}
-	return 0;
+	
+	 
 }
+
