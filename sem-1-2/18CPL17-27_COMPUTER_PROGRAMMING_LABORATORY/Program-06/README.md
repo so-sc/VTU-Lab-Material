@@ -1,42 +1,37 @@
 # Program 06
 
-Introduce 1D Array manipulation and implement Binary search.
+Implement using functions to check whether the given number is prime and display appropriate messages. (No built-in math function)
 
-## Output 
+## Output
 
-```shell
-$ gedit program-06.c 
+```shell 
+$ gedit program-06.c
 $ gcc program-06.c
-$ ./a.out
-
-
-Enter the number of elements: 5
-Enter the Array in ascending order:
-5 10 15 20 25
-Enter the key to be searched 10
-
-Key is available at 2 location.
 
 $ ./a.out
+Enter the number: 91
+91 is not a prime.
 
-Enter the number of elements: 5
-Enter the Array in ascending order:
-10 20 30 40 50
-Enter the key to be searched: 13
-Key is not Found.
+$ ./a.out
+Enter the number: 20050
+20050 is not a prime.
+
+$ ./a.out
+Enter the number: 17
+17 is a prime.
 
 ```
 
 ## Screenshot
-
-![image](https://user-images.githubusercontent.com/44167922/50255925-f99cb100-0419-11e9-9ac1-ff148b3b4ca3.png)
+![image](https://user-images.githubusercontent.com/44167922/50372912-ed247e00-05fc-11e9-803e-9e13df89bb5c.png)
 
 ## Concept used:
 
-- If-else conditions
-- Arrays
+- Functions
+- if conditions
 
-## Links for reference:
+## Link for reference:
 
-Understand Arrays in c at [newBoston](https://www.youtube.com/watch?v=7F-Q2oVBYKk&index=9&list=PL6gx4Cwl9DGAKIXv8Yr6nhGJ9Vlcjyymq "Link to YouTube video")
+Understand functions in c at [newBoston](https://www.youtube.com/watch?v=lv5IDF7dmBk "Link to YouTube video")
+
 

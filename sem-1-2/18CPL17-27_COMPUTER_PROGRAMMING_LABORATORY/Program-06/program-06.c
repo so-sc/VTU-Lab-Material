@@ -1,52 +1,52 @@
-/*To implement binary search technique in 1D Array*/
+/*To implement functions to check if a number is prime or not*/
 
 #include<stdio.h>
 
+int isprime(int n)
+{
+	/*
+		Function that returns
+		0 --> when n is not a prime
+		1 --> when n is a prime
+	*/
+	
+	int i;
+	if(n == 1 || n == 0)
+	{
+		return 0;
+	}
+	
+	/*Check only till n/2 because numbers > n/2 will never divide n*/
+	for(i = 2; i<n/2; i++)
+	{
+		if(n%i == 0)
+		{
+			return 0;
+		}
+	}
+	
+	return 1;
+}
+
 int main()
 {
-	int a[100], n, f, mid, l, i, key, flag = 0;
-	
-	printf("\nEnter the number of elements: ");
+	int f, n; //Works only for small integers, i.e n<32767
+		
+	printf("Enter the number: ");
 	scanf("%d", &n);
-	printf("Enter the Array in ascending order:\n");
-	for(i=0;i<n;i++)
+	
+	//Assigning f as 0 or 1
+	f = isprime(n);
+	
+	
+	//Same as if(f == 1)
+	if(f)
 	{
-		scanf("%d", &a[i]);
-	}
-	
-	printf("Enter the key to be searched: ");
-	scanf("%d", &key);
-	
-	f = 0;
-	l = n - 1;
-	
-	while(f<=l)
-	{
-		mid = (f + l)/2;
-		if(a[mid] == key)
-		{
-			flag = 1;
-			break;
-		}
-		else if(a[mid]<key)
-			{
-				f = mid + 1;
-			}
-		else 
-			{
-				l = mid - 1;
-			}
-	}
-	
-	if(flag)
-	{
-		printf("\nKey is available at %d location.\n", mid + 1);
+		printf("%d is a prime.\n", n);
 	}
 	else
 	{
-		printf("Key is not Found.\n");
+		printf("%d is not a prime.\n", n);
 	}
-	
-	return 0;	
+	return 0;
 }
-

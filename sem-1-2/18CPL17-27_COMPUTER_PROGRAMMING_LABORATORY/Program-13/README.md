@@ -1,42 +1,23 @@
 # Program 13
 
-Implement structures to read, write and compute average marks and the students scoring above and below the average marks for a class of N students.
+Develop a program using pointers to compute the sum, mean and standard deviation of all elements stored in an array of n real numbers.
 
 ## Output
 
 ```shell
 $ gedit program13.c
-$ gcc program13.c
+$ gcc program13.c -lm
 $ ./a.out
 
-Enter the number of students:3
-Enter the details:
-
-Enter student 1:
-Enter name: Dave 
-Enter rollno: 1000
-Enter marks: 93
-
-Enter student 2:
-Enter name: Scott
-Enter rollno: 1001
-Enter marks: 85.75
-
-Enter student 3:
-Enter name: Ana 
-Enter rollno: 1002
-Enter marks: 90.5
-Average = 89.750000
-
-Details of students who scored above average:
-Rollno	Name	Marks
-1000	Dave	93.000000 
-1002	Ana	90.500000 
-Details of students who scored below or equal to average:
-Rollno	Name	Marks
-1001	Scott	85.750000 
+Enter the number of elements: 5
+Enter the elements:
+1 2 3 4 5 
+Sum = 15.000000
+Mean = 3.000000
+Standard deviation = 1.414214
 
 ```
  
 ## Screenshot
-![image](https://user-images.githubusercontent.com/44167922/50140963-4bcfbc00-02cc-11e9-80b2-4f0aac86a280.png)
+![image](https://user-images.githubusercontent.com/44167922/50155823-18ecee80-02f3-11e9-8dcb-e81f7e8cec86.png)
+

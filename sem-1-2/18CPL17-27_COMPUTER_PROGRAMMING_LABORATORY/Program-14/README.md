@@ -1,23 +1,31 @@
 # Program 14
 
-Develop a program using pointers to compute the sum, mean and standard deviation of all elements stored in an array of n real numbers.
+Implement recursive functions for Binary to Decimal Conversion.
 
 ## Output
 
 ```shell
+
 $ gedit program14.c
-$ gcc program14.c -lm
+$ gcc program14.c
 $ ./a.out
 
-Enter the number of elements: 5
-Enter the elements:
-1 2 3 4 5 
-Sum = 15.000000
-Mean = 3.000000
-Standard deviation = 1.414214
+Enter the binary number to be converted: 1111
+Decimal of 1111 is: 15
+
+$ ./a.out
+
+Enter the binary number to be converted: 1111101
+Decimal of 1111101 is: 125
+
+$ ./a.out 
+
+Enter the binary number to be converted: 1001
+Decimal of 1001 is: 9
+
 
 ```
- 
-## Screenshot
-![image](https://user-images.githubusercontent.com/44167922/50155823-18ecee80-02f3-11e9-8dcb-e81f7e8cec86.png)
 
+## Screenshot
+
+![image](https://user-images.githubusercontent.com/44167922/50184025-e0bcce80-0339-11e9-89d9-95804639e81b.png)

@@ -1,24 +1,63 @@
-#include <stdio.h>
-void main()
+/*To implement an electricity bill*/
+
+#include<stdio.h>
+
+int main()
 {
-	int num, rev=0, temp, rem;
-	printf("\nEnter a number: ");
-	scanf("%d",&num);
-	temp = num;
-	while (temp!=0)
+	float charge;
+	int units;
+	char name[25];
+	
+	//Input required	
+	printf("\nEnter the name: ");
+	scanf("%s", &name);
+	printf("Enter the no.of.units consumed: ");
+	scanf("%d", &units);
+	
+	//Compute charge
+	if(units<=200)
 	{
-		rem = temp % 10;
-		temp = temp / 10;
-		rev = rev * 10 + rem;
+		charge = units*0.8;
+	}
+	else if(units<=300)
+		{
+			/*
+			
+			From previous if(), we have determined that units>200, 
+			but we should charge only 80p for first 200 units, so 200*0.8 = 160
+			and the next hundred units to be charged 90p, 
+			so no.of units to be charged 90p = units - 300
+			
+			*/
+			charge = 160 + (units-200)*0.9;	
+		}
+		else
+		{	
+			/*
+			
+			From previous if(), we have determined that units>300, 
+			but we should charge only 80p for first 200 units and 90p for next 100, so 200*0.8 + 100*0.9= 250
+			and the next units to be charged Rs.1, 
+			so no.of units to be charged Rs.1 = units - 300
+			
+			*/
+			charge = 250 + (units - 300)*1;
+		}
+	
+	//Additional meter charge
+	charge += 100;
+	
+	//Additional 15% tax
+	if(charge > 400)
+	{
+		charge = charge +charge*0.15;
 	}
 	
-	printf("The reversed number is: %d\n", rev);
+	//Required Output
+	printf("\nName: %s ", name);
+	printf("\nUnits consumed: %d", units);
+	printf("\nCharge = Rs %f\n", charge);
 	
-	if(rev == num)
-	{
-		printf("Is a palindrome\n\n");
-	}else
-		{
-			printf("It is not a palindrome\n\n");
-		}
+	return 0;
+
 }

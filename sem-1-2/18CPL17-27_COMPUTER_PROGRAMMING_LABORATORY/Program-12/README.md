@@ -1,24 +1,42 @@
 # Program 12
 
-Develop a program to find the square root of a given number N and execute foe all possible inputs with appropriate messages. Note: Don’t use library function sqrt(n).
+Implement structures to read, write and compute average marks and the students scoring above and below the average marks for a class of N students.
 
 ## Output
 
 ```shell
-$ gedit programe12.c
+$ gedit program12.c
 $ gcc program12.c
 $ ./a.out
-Enter the number:25
-The square root of number 25.000000 = 5.000000
 
-$ ./a.out
-Enter the number:99
-The square root of number 99.000000 = 9.949875
+Enter the number of students:3
+Enter the details:
 
-$ ./a.out
-Enter the number:12
-The square root of number 12.000000 = 3.464102
+Enter student 1:
+Enter name: Dave 
+Enter rollno: 1000
+Enter marks: 93
+
+Enter student 2:
+Enter name: Scott
+Enter rollno: 1001
+Enter marks: 85.75
+
+Enter student 3:
+Enter name: Ana 
+Enter rollno: 1002
+Enter marks: 90.5
+Average = 89.750000
+
+Details of students who scored above average:
+Rollno	Name	Marks
+1000	Dave	93.000000 
+1002	Ana	90.500000 
+Details of students who scored below or equal to average:
+Rollno	Name	Marks
+1001	Scott	85.750000 
+
 ```
-
+ 
 ## Screenshot
-![image](https://user-images.githubusercontent.com/44167922/50125916-ca0e6d00-0290-11e9-912d-1e94608acb11.png)
+![image](https://user-images.githubusercontent.com/44167922/50140963-4bcfbc00-02cc-11e9-80b2-4f0aac86a280.png)
