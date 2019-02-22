@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 .DS_STORE
 .vscode
 **/.DS_STORE
 a.out
+=======
+.DS_STORE
+.vscode
+**/.DS_STORE
+a.out
+>>>>>>> 8c6ec7dee2e69b01976459206eb713b748e23f9b

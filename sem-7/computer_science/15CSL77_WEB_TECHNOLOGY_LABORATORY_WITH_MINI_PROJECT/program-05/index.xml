@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version = "1.0" encoding = "UTF-8"?>
 <?xml-stylesheet type="text/css" href="style.css"?>
 <students>
@@ -27,4 +28,35 @@
 		<year>2015</year>
 		<email>mortysmith@gmail.com</email>
 	</student>
+=======
+<?xml version = "1.0" encoding = "UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<students>
+	<student>
+		<name>Rick Sanchez</name>
+		<usn>4SF15CS102</usn>
+		<college>Sahyadri College of Engineering and Management</college>
+		<branch>Computer Science</branch>
+		<year>2015</year>
+		<email>ricksanchez@gmail.com</email>
+	</student>
+	
+	<student>
+		<name>Jessica</name>
+		<usn>4SF15CS103</usn>
+		<college>Sahyadri College of Engineering and Management</college>
+		<branch>Computer Science</branch>
+		<year>2015</year>
+		<email>jessica@gmail.com</email>
+	</student>
+
+	<student>
+		<name>Morty Smith</name>
+		<usn>4SF15CS104</usn>
+		<college>Sahyadri College of Engineering and Management</college>
+		<branch>Computer Science</branch>
+		<year>2015</year>
+		<email>mortysmith@gmail.com</email>
+	</student>
+>>>>>>> 8c6ec7dee2e69b01976459206eb713b748e23f9b
 </students>

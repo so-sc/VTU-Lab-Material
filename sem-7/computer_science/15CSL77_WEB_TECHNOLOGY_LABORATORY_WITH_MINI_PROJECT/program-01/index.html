@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,3 +49,55 @@
 
 
 
+=======
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Calculator</title>
+	<style type="text/css">
+		input{width:100%;}
+	</style>
+</head>	
+<body>
+	<h2 align="center">Simple Calculator</h2>
+	<form name="cal">
+		<table align="center" border="1">
+			<tr>
+				<td colspan="4"> <input type="text" name="get"/></td> 
+			</tr>
+
+			<tr>
+				<td> <input type="button" value="1" onclick="cal.get.value +='1'"></td>
+				<td> <input type="button" value="2" onclick="cal.get.value +='2'"></td>
+				<td> <input type="button" value="3" onclick="cal.get.value +='3'"></td>
+				<td> <input type="button" value="+" onclick="cal.get.value +='+'"></td>
+			</tr>
+
+			<tr>
+				<td> <input type="button" value="4" onclick="cal.get.value +='4'"></td>
+				<td> <input type="button" value="5" onclick="cal.get.value +='5'"></td>
+				<td> <input type="button" value="6" onclick="cal.get.value +='6'"></td>
+				<td> <input type="button" value="-" onclick="cal.get.value +='-'"></td>
+			</tr>
+
+			<tr>
+				<td> <input type="button" value="7" onclick="cal.get.value +='7'"></td>
+				<td> <input type="button" value="8" onclick="cal.get.value +='8'"></td>
+				<td> <input type="button" value="9" onclick="cal.get.value +='9'"></td>
+				<td> <input type="button" value="*" onclick="cal.get.value +='*'"></td>
+			</tr>
+
+			<tr>
+				<td> <input type="reset" value="c" ></td>
+				<td> <input type="button" value="0" onclick="cal.get.value +='0'"></td>
+				<td> <input type="button" value="=" onclick="cal.get.value =eval(cal.get.value)"></td>
+				<td> <input type="button" value="/" onclick="cal.get.value +='/'"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+
+
+
+>>>>>>> 8c6ec7dee2e69b01976459206eb713b748e23f9b
