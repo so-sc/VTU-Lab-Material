@@ -37,32 +37,30 @@ Static int prims(int g[][],int n,int t[][]){
   visted[k]=0;
   mincost=0;
 
-
-for(k=1;k<=n;i++)
-{
-  min=99;
-  u=1;
-  v=1;
+  for(k=1;k<=n;i++)
+  {
+    min=99;
+    u=1;
+    v=1;
     for(i=1;i<=n;i++)
     {
       if(visited[i]==1)
       for(j=1;j<=n;j++)
-        if(g[i][j]<min)
-        {
-          min=g[i][j]
-          u=i;
-          v=j;
-        }
-    }
-  t[u][v]=t[v][u]=g[u][v];
-  mincost=mincost+g[u][v];
-  visited[v]=1;
-  
-   System.out.println("("+u+","+v+")"+"="+t[u][v]);
-   for(i=1;i<=n;i++)
-        for(j=1;j<=n;j++)
-        if(visited[i]!=0 && visited[j]!=0)
-        g[i][j]=g[j][i]=99;
+      if(g[i][j]<min)
+      {
+        min=g[i][j]
+        u=i;
+        v=j;
+      }
+   }
+    t[u][v]=t[v][u]=g[u][v];
+    mincost=mincost+g[u][v];
+    visited[v]=1;
+    System.out.println("("+u+","+v+")"+"="+t[u][v]);
+    for(i=1;i<=n;i++)
+    for(j=1;j<=n;j++)
+    if(visited[i]!=0 && visited[j]!=0)
+    g[i][j]=g[j][i]=99;
     }
     return(mincost);
     }
