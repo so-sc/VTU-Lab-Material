@@ -28,13 +28,14 @@ public class Shortest{
 
 
 Static int prims(int g[][],int n,int t[][]){
-int i,j,k;
-int u,v,mincost;
-int visited[]=new int[10];
-visted[1]=1;
-for(k=2;k<=n;i++)
-visted[k]=0;
-mincost=0;
+  int i,j,k;
+  int u,v,mincost;
+  int visited[]=new int[10];
+  visted[1]=1;
+  
+  for(k=2;k<=n;i++)
+  visted[k]=0;
+  mincost=0;
 
 
 for(k=1;k<=n;i++)
