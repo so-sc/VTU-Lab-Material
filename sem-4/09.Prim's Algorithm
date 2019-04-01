@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class Shortest{
+public static void main(string[],args){
+
+int cost[][]=new int[10][10];
+int t[][]=new int[10][10];
+int i,j,mincost=0;
+Scanner in=new Scanner(System.in);
+
+System.out.println("Prims Algorithm");
+System.out.println("Enter the nodes");
+int n=in.nextInt();
+
+
+for(i=1;i<=n;i++)
+for(j=1;j<=n;j++)
+cost=in.nextInt();
+for(i=1;i<=n;i++)
+for(j=1;j<=n;j++)
+t[][]=
+for(i=1;i<=n;i++)
+for(j=1;j<=n;j++)
+
+for(k=1;k<=n;i++)
+visted[][]=;
+
+for(k=2;k<=n;j++)
+int i,j,k;
+int u,v,visited[10],
