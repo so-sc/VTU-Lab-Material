@@ -2,8 +2,8 @@
 
 .DATA
 	N	DW	5
-	C	DW	2
-	R	DW	0
+	R	DW	2
+	RESULT	DW	0
 
 .CODE
 	MOV AX,@DATA
