@@ -18,7 +18,7 @@ UP:
     CALL DELAY
     INC AL
     CMP AL,99H
-    JBE UP
+    JNE UP
     MOV AL,99H
     MOV DX,PORTA
 DOWN:
@@ -37,7 +37,7 @@ L1:
 L2:
     LOOP L2
     DEC BX
-    JNX L1
+    JNZ L1
     RET
 DELAY ENDP
 END
