@@ -34,6 +34,9 @@ Remainder = 1
 
 ```
 
+# Flowchart 
+![Untitled Diagram](https://user-images.githubusercontent.com/42874695/61176066-23950b00-a5d8-11e9-9f87-525c0979b749.png)
+
 ## Screenshot
 ![calculator](https://user-images.githubusercontent.com/44167922/50517635-37af6a00-0ad7-11e9-945b-a7d074fef98d.png)
 
