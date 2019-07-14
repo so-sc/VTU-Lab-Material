@@ -17,6 +17,9 @@ Units consumed: 100
 Charge = Rs 180.000000
 
 ```
+## Flowchart
+![f4(1)](https://user-images.githubusercontent.com/42874695/61186582-d3c04d80-a684-11e9-8c3e-c252b5d67dbf.png)
+
 
 ## Screenshot
 
