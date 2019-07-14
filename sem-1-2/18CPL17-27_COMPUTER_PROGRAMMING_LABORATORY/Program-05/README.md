@@ -26,6 +26,8 @@ Enter the key to be searched: 13
 Key is not Found.
 
 ```
+## Flowchart
+![Screenshot from 2019-07-14 21-45-25](https://user-images.githubusercontent.com/42874695/61187096-49c7b300-a68b-11e9-80f8-e30b9e9ff3aa.png)
 
 ## Screenshot
 
