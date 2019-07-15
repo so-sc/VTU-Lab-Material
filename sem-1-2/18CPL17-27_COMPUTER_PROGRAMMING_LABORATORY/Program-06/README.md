@@ -21,7 +21,8 @@ Enter the number: 17
 17 is a prime.
 
 ```
-
+## Flowchart
+![Screenshot from 2019-07-16 00-20-50](https://user-images.githubusercontent.com/42874695/61240921-fffccc80-a75f-11e9-88e2-7009d7a07d18.png)
 ## Screenshot
 ![image](https://user-images.githubusercontent.com/44167922/50372912-ed247e00-05fc-11e9-803e-9e13df89bb5c.png)
 

@@ -34,6 +34,8 @@ Enter order of Matrix 2: 4 10
 Matrices are incompatible!, try again.
 
 ```
+## Flowchart
+![Screenshot from 2019-07-16 00-17-16](https://user-images.githubusercontent.com/42874695/61240996-2c184d80-a760-11e9-9a8e-c0fc41292c8c.png)
 
 ## Screenshot
 

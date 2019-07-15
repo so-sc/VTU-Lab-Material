@@ -17,6 +17,8 @@ Roots are real and distinct:
 Root 1: 1.745967	Root 2: -13.745967
 
 ```
+## Flowchart
+![f2](https://user-images.githubusercontent.com/42874695/61185868-b9ce3d00-a67b-11e9-855e-b5bc06f4dac5.png)
 
 ## Screenshot
 

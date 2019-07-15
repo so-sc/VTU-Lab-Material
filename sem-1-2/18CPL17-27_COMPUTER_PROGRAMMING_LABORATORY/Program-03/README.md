@@ -19,6 +19,8 @@ The reversed number is: 1001
 Is a palindrome
 
 ```
+## Flowchart
+![Screenshot from 2019-07-14 21-45-25](https://user-images.githubusercontent.com/42874695/61186249-c1441500-a680-11e9-89fd-97ba35e8ddff.png)
 
 ## Screenshots
 
