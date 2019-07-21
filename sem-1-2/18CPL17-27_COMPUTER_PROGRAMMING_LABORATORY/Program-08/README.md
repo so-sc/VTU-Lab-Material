@@ -27,6 +27,8 @@ Calculated = 0.956305
 Builtin function = 0.956305
 
 ```
+## Flowchart
+![Screenshot from 2019-07-21 21-13-20](https://user-images.githubusercontent.com/42874695/61593388-7dab5700-abfc-11e9-9325-938d648c70e6.png)
 
 ## Screenshot
 
