@@ -17,7 +17,8 @@ Mean = 3.000000
 Standard deviation = 1.414214
 
 ```
- 
+ ## Flowchart
+ ![Screenshot from 2019-07-21 22-49-12](https://user-images.githubusercontent.com/42874695/61594460-d03f4000-ac09-11e9-8d9c-e4095937e04b.png)
 ## Screenshot
 ![image](https://user-images.githubusercontent.com/44167922/50155823-18ecee80-02f3-11e9-8dcb-e81f7e8cec86.png)
 
