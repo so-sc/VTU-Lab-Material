@@ -20,6 +20,11 @@ Array after bubble sorting is:
 3	8	15	26	99	
 
 ``` 
+## Flowchart
+
+![Screenshot from 2019-07-21 21-43-52](https://user-images.githubusercontent.com/42874695/61593726-cf55e080-ac00-11e9-8798-58e99e5f28ff.png)
+
+
 
 ## Screenshot
 
