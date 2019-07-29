@@ -64,7 +64,7 @@ int insert()
 }
 int delete()
 {
-    printf("Enter the position where new elements has to be entered\n");
+    printf("Enter the position where element has to be deleted\n");
     scanf("%d",&pos);
     if(!(pos>0 && pos<n))
     {
