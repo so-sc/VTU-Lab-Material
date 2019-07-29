@@ -40,7 +40,7 @@ return 0;
 }
 int insert()
 {
-    printf("Enter the position where new elements has to be entered\n");
+    printf("Enter the position where new element has to be entered\n");
     scanf("%d",&pos);
     if(!(pos>0 && pos<=n))
     {
