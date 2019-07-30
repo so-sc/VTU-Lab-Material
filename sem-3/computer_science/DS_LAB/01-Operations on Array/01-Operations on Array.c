@@ -42,7 +42,7 @@ int insert()
 {
     printf("Enter the position where new elements has to be entered\n");
     scanf("%d",&pos);
-    if(!(pos>0 && pos<=n))
+    if(!(pos>0 && pos<=n+1))
     {
         printf("Invalid position\n");
         return 0;
@@ -53,9 +53,9 @@ int insert()
         scanf("%d",&elem);
         for(i=n;i>=pos;i--)
         {
-            a[i+1]=a[i];
+            a[i]=a[i-1];
         }
-        a[pos]=elem;
+        a[pos-1]=elem;
         n+=1;
         display();
     }
@@ -75,7 +75,7 @@ int delete()
     {
         for(i=pos;i<n;i++)
         {
-            a[i]=a[i+1];
+            a[i-1]=a[i];
         }
         n-=1;
         display();
