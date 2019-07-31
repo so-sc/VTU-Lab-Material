@@ -66,7 +66,7 @@ int delete()
 {
     printf("Enter the position where element has to be deleted\n");
     scanf("%d",&pos);
-    if(!(pos>0 && pos<n))
+    if(!(pos>0 && pos<=n))
     {
         printf("Invalid option");
         return 0;
