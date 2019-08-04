@@ -1,0 +1,59 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package program1a;
+import java.util.Scanner;
+
+ 
+public class Student {
+    String USN;
+    String Name;
+    String branch;
+    String phone;
+
+    void insertrecord(String reg,String name,String brnch,String ph)
+    {
+        USN=reg;
+        Name=name;
+        branch=brnch;
+        phone=ph;
+        
+    }
+
+    void displayrecord()
+    {
+        System.out.println(USN+"      "+Name+"      "+branch+"      "+phone);
+       
+    }
+    
+    public static void main(String[] args) {
+        Student s[]=new Student [100];
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter the no. of students");
+        int n=sc.nextInt();
+        
+        for(int i=0;i<n;i++)
+            s[i]=new Student();
+
+        for(int j=0;j<n;j++)
+        {
+            System.out.println("Enter the  USN,Name,Branch,Phone");
+            String USN=sc.next();
+            String Name=sc.next();
+            String branch=sc.next();
+            String phone=sc.next();
+            s[j].insertrecord(USN, Name, branch, phone);
+        }
+        System.out.println("USN           "+"Name         "+"Banch    "+"phone");
+        for(int k=0;k<n;k++)
+        {
+            s[k].displayrecord();
+        }
+       
+    }
+    
+}
