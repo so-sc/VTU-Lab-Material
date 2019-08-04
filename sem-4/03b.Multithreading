@@ -1,0 +1,63 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package program3b;
+import java.util.Random;
+class Random_Num_Thread extends Thread
+{
+    public void run()
+    {
+        Random rand;
+        int i=0;
+        System.out.println("Random numbers generated are:");
+        do
+        {
+            rand=new Random();
+            System.out.println(rand.nextInt(100));
+            i++;
+        }
+        while(i<10);
+    }
+}
+
+class Square_Num extends Thread
+{
+    int n;
+    public void run()
+    {
+        System.out.println("Square of number "+n+" is: "+Math.pow(n,2));
+    }
+    public Square_Num(int a)
+    {
+        n=a;
+    }
+}
+
+class Cube_Num extends Thread
+{
+    int n;
+    public void run()
+    {
+        System.out.println("Cube of number "+n+" is: "+Math.pow(n,3));
+    }
+    public Cube_Num(int a)
+    {
+        n=a;
+    }
+    
+}
+public class Lab3b {
+
+   
+    public static void main(String[] args) {
+       Thread thread1=new Random_Num_Thread();
+       thread1.start();
+       Thread thread2=new Square_Num(3);
+       thread2.start();
+       Thread thread3=new Cube_Num(3);
+       thread3.start();
+    }
+    
+}
