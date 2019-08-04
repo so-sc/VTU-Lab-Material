@@ -1,0 +1,53 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package program2b;
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+
+class Customer
+{
+    private String name;
+    private String date_of_birth;
+    
+    
+    public void readData(String name,String date_of_birth)
+    {
+        this.name=name;
+        this.date_of_birth=date_of_birth;
+    }
+    
+    
+    public void displayData()
+    {
+        StringTokenizer st=new StringTokenizer(this.date_of_birth,"/");
+        System.out.print(this.name+",");
+        while(st.hasMoreTokens())
+        {
+            System.out.print(st.nextToken()+" ");
+        }
+    }
+          
+}
+
+
+
+public class Lab2b {
+
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        System.out.println("Enter Name:");
+        String name=in.nextLine();
+        System.out.println("Enter Date of birth(dd/mm/yyyy):");
+        String date=in.next();
+        Customer customer=new Customer();
+        customer.readData(name,date);
+        customer.displayData();
+        
+        
+    }
+    
+}
