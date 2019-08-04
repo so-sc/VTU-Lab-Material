@@ -1,0 +1,84 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package program1b;
+import java.util.Scanner;
+public class Stack {
+    final int max=5;
+    int s[]=new int[max];
+    int top=-1;
+
+
+    void push(int ele)
+    {
+        if(top>=max-1)
+            System.out.println("Stack overflow!!");
+        else
+            s[++top]=ele;
+        
+    }
+
+
+    void pop()
+    {
+        if(top==-1)
+            System.out.println("Stack underflow!!");
+        else
+        {
+            int z=s[top--];
+            System.out.println("The popped element is: "+z);
+        }    
+    }
+
+
+
+    void display()
+    {
+        if(top==-1)
+            System.out.println("Stack empty!!");
+        else
+        {
+            System.out.println("Element in stack are");
+            for(int i=top;i>-1;i--)
+            System.out.println(s[i]+" ");
+        }
+    }
+
+
+
+
+    public static void main(String[] args) {
+        int q=1;
+        Stack m=new Stack();
+        System.out.println("Program to perform stack operation");
+        Scanner sc=new Scanner(System.in);
+
+
+        while(q!=0)
+        {
+            System.out.println("Enter1.Push2.Pop3.Display4.Exit");
+            System.out.println("Enter the choice");
+            int ch=sc.nextInt();
+
+
+            switch(ch)
+            {
+                case 1:System.out.println("Enter the element to be pushed");
+                        int ele=sc.nextInt();
+                        m.push(ele);
+                        break;
+                case 2:m.pop();
+                        break;
+                case 3:m.display();
+                        break;
+                case 4:q=0;
+                       break;
+                default:System.out.println("Invalid Choice");
+                        break;
+            }
+        }
+    }
+}
+
