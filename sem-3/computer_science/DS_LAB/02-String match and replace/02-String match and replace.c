@@ -43,7 +43,7 @@ void main()
 	gets(rep);
 	strmatch();
 	if(flag==1)
-	printf("The final string is:\n%s",ans);
+	printf("Pattern string is found in the main string\n The final string is:\n%s",ans);
 	else
-	printf("Invalid string");
+	printf("Pattern string is not found on the main string\n");
 }
