@@ -4,7 +4,7 @@ char str[100],pat[100],rep[100],ans[100];
 int i,j,k,m,c,flag=0;
 
 
-void strmatch()
+void putmat()
 {
 	int i=c=m=j=0;
 	while(str[c]!='\0')
@@ -41,7 +41,7 @@ void main()
 	gets(pat);
 	printf("Enter the rep string\n");
 	gets(rep);
-	strmatch();
+	putmat();
 	if(flag==1)
 	printf("The final string is:\n%s",ans);
 	else
