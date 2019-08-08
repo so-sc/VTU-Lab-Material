@@ -7,107 +7,116 @@
 
  
 #include<stdio.h>
-#include<math.h>
 #include<stdlib.h>
-#define TRUE 1
-#define FALSE 0
-#define stacksize 100
-int top,pos;
-char infix[100],postfix[100],item[stacksize];
-
-void main()
+#include<string.h>
+#define max 5
+char infix[50],postfix[50],item;
+void convert();
+struct stack
 {
-	int top=-1;
-	printf("Enter the infix expression:\n");
-	scanf("%s",infix);
-	convert();
-	printf("The postfix expression is:%s\n",postfix);
-}
+    int top;
+    char item[max];
+}s;
 
-void push(char x)
+void push(char value)
 {
-	if(top==stacksize-1)
-	printf("Overflow\n");
-	else
-	{
-		top++;
-		item[top]=x;
-	}
+    if(s.top==(max-1))
+    {
+        printf("The stack is overflow\n");
+        exit(0);
+    }
+    else
+    {
+        s.item[++s.top]=value;
+    }
+
 }
 
 char pop()
 {
-	if(top==-1)
-	{
-		printf("Underflow\n");
-		return(0);
-	}
-	return item[top--];
-}
+    if(s.top==-1)
+    {
+        printf("Stack underflow\n");
+        exit(0);
 
-void convert()
-{
-	int i,pos=0;
-	char temp,symb;
-	for(i=0;infix!='\0';i++)
-	{
-		symb=infix[i];
-		switch(symb)
-		{
-			case '(': push(x);
-				  break;
-			case ')': while((temp=pop())!='(')
-				  {
-					postfix[pos++]=temp;
-				  }
-		
-			case '^':
-			case '%':
-			case '*':
-			case '/':
-			case '-':
-			case '+':
-			while(!empty && precidence(item[top])>=precidence(symb))
-			{
-				postfix[pos++]=pop();
-			}
-			push(symb);
-			break;
-			default: postfix[pos++]=symb;
-		}
-	}
-	while(
-			temp=pop;
-			postfix[pos++]=temp;
-	      }
-		
-
-
-
-
-
-
-
-void precidence()
-{
-	switch(symb)
-	{
-		case '^':return(3);
-		case '%':
-		case '*':
-		case '/':return(2);
-		case '-':
-		case '+':return(1);
-		case ')':
-		case '(':return(0);
-	}
-	return(symb);
+    }
+    return (s.item[s.top--]);
 }
 
 int empty()
 {
-	if(top==-1)
-	return TRUE;
-	else
-	return FALSE;
+    if(s.top==-1)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
 }
+int precedace(char c)
+{
+    switch(c)
+    {
+        case '^':return 3;
+        case '*':
+        case '/':
+        case '%':return 2;
+        case '+':
+        case '-':return 1;
+        case '(':return 0;
+    }
+}
+
+void main()
+{
+    s.top=-1;
+    printf("Enter the infix expression\n");
+    gets(infix);
+
+    convert();
+    printf("The postfix expression:\n");
+    puts(postfix);
+}
+
+void convert()
+{
+    int i,pos=0;
+    char symb,t;
+    for(i=0;infix[i]!='\0';i++)
+    {
+        symb=infix[i];
+        switch(symb)
+        {
+            case '(':push(symb);
+                    break;
+            case ')':while((t=pop())!='(')
+                    {
+                    postfix[pos++]=t;
+                    }
+                    break;
+            case '^':
+            case '*':
+            case '/':
+            case '%':
+            case '+':
+            case '-':while((!empty()) && ((precedace(s.item[s.top])) >= precedace(symb)))
+                    {
+                        postfix[pos++]=pop();
+                    }
+                    push(symb);
+                    break;
+            default:postfix[pos++]=symb;
+                    break;
+
+
+        }
+    }
+    while(!empty())
+    {
+        postfix[pos++]=pop();
+    }
+    postfix[pos]='\0';
+
+}
+
