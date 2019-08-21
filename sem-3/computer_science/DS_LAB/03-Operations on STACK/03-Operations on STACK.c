@@ -124,7 +124,7 @@ int palindrome()
         printf("Not palindrome\n");
         flag=0;
     }
-    else printf("plaindrome\n");
+    else printf("palindrome\n");
     return 0;
 }
 }
