@@ -1,243 +1,156 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<malloc.h>
-int max=5, count;
+int c;
 
 struct student
 {
-	char usn[10];
-	char name[25];
-	char branch[15];
-	int sem;
-	char phno[10];
-	struct student *next;
+    char name[25];
+    char usn[25];
+    char branch[25];
+    char phone[25];
+    int sem;
+    struct student *link;
 };
-
 typedef struct student node;
+node *head;
 
-node* getnode(node *head)
+node *getnode()
 {
-	node *nn;
-	nn=(node*)malloc(sizeof(node));
-	printf("Enter USN");
-	scanf("%s",nn->usn);
-	printf("Enter Name");
-	scanf("%s",nn->name);
-	printf("Enter Branch");
-	scanf("%s",nn->branch);
-	printf("Enter Semester");
-	scanf("%d",&nn->sem);
-	printf("Enter Phone number");
-	scanf("%s",nn->phno);
-	nn->next='\0';
-	return nn;
+    node *nn;
+    nn=(node*)malloc(sizeof(node));
+    printf("Enter the student details\n");
+    printf("name\n");
+    scanf("%s",nn->name);
+    printf("Usn\n");
+    scanf("%s",nn->usn);
+    printf("Branch\n");
+    scanf("%s",nn->branch);
+    printf("Phone\n");
+    scanf("%s",nn->phone);
+    printf("Sem\n");
+    scanf("%d",&nn->sem);
+    nn->link=NULL;
+    return nn;
 }
-
-node* create(node *head)
+void display()
 {
-	node *nn;
-	nn=getnode(head);
-	if(head==NULL)
-	{
-	head=nn;
-	}
-	else
-	{	
-		nn->next=head;
-		head=nn;
-	}
-	return head;
+    node *p;
+    int count=0;
+    if(head==NULL) printf("No student data\n");
+    else
+    {
+        p=head;
+        printf("Name\tusn\t\tbranch\tphone\tsem\n");
+        while(p!=NULL)
+        {
+            count++;
+            printf("%s\t%s\t\t%s\t%s\t%d\n",p->name,p->usn,p->branch,p->phone,p->sem);
+            p=p->link;
+        }
+        printf("The number of nodes = %d\n",count);
+    }
+
 }
-	
-node* insertfront(node *head)
+void create()
 {
-	node *nn;
-	nn=create(head);
-	head=nn;
-	return head;
+    node *temp;
+    temp=getnode();
+    if(head==NULL) head=temp;
+    else
+    {
+        temp->link=head;
+        head=temp;
+    }
+
 }
-
-node *insertrear(node *head)
+void insertfront()
 {
-	node *nn,*p;
-	p=head;
-	nn=getnode(head);
-		if(head==NULL)
-		{
-		
-		head=nn;
-		
-		}
-		else
-		{
-			while(p->next!=NULL)
-			{
-				p=p->next;
-			}
-		
-			p->next=nn;
-		}
-		return head;
-		
+    create();
 }
-
-
-int countnode(node *head)
+void insertrear()
 {
-	node *p;
-	p=head;
-	count=0;
-	while(p!=NULL)
-		{
-			p=p->next;
-			count++;
-		}
-	return count;
-}	
+    node *temp,*p;
+    p=head;
+    temp=getnode();
+    if(head==NULL) head=temp;
+    else
+    {
+        while (p->link!=NULL)
+        {
+            p=p->link;
+        }
+        p->link=temp;
 
-node *deletefront(node *head)
-{
-	node *p;
-	if(countnode(head)==0)
-	{
-		printf("List is empty\n");
-		return(0);
-	}
-	else
-	{
-		p=head;
-		head=head->next;
-		free(p);
-	}
-	return head;
+    }
+
 }
-
-node *deleterear(node *head)
+void deletefront()
 {
-	node *p,*q;
-	if(head==NULL)
-	{
-		printf("List is empty\n");
-		return(0);
-	}
-	else
-	{
-		p=head;
-		while((p->next)->next!=NULL)
-		{
-			p=p->next;
-		}
-		q=p->next;
-		p->next=NULL;
-		free(q);
-	}
-}		
+    node *p;
+    if(head==NULL) printf("no student data\n");
+    else
+    {
+        p=head;
+        head=head->link;
+    }
+    free(p);
 
-node *display(node *head)
-{
-	
-	if(head==NULL)
-	printf("list is empty\n");
-	else
-	{	node *p;
-		p=head;
-		while(p!=NULL)
-		{
-			printf("USN:%s\tName:%s\tBranch:%sSem:%d\tPh.no%s\n",p->usn,p->name,p->branch,p->sem,p->phno);
-			p=p->next;
-		}printf("\nno of nodes:%d\n",countnode(head));
-	}return head;
 }
-
-node *insert(node *head)
+void deleterear()
 {
-	int ch;
-	do
-	{
-	printf("Enter your choice:\n1.Insert Front\t2.Insert Rear\t3.Exit\n");
-	scanf("%d",&ch);
-	switch(ch)
-	{
-		case 1: head=insertfront(head);
-			break;
-		case 2: head=insertrear(head);
-			break;
-		case 3: break;
-		default:printf("Invalid Input\n");
-	}
-	}while(ch!=3);
-	return head;
+    node *p,*q;
+    if(head==NULL) printf("no student data\n");
+    else if (head->link==1)
+    {
+        p=head;
+        head=NULL;
+        free(p);
+        printf("node deleted\n");
+    }
+    else
+    {
+        p=head;
+        while ((p->link)->link!=NULL)
+        {
+            p=p->link;
+        }
+        q=p->link;
+        p->link=NULL;
+        free(q);
+
+    }
+
+
+
 }
-
-
-node *delete(node *head)
-{
-	int ch;
-	do
-	{
-	printf("Enter your choice:\n1.Insert Front\t2.Insert Rear\t3.Exit\n");
-	scanf("%d",&ch);
-	switch(ch)
-	{
-		case 1: head=deletefront(head);
-			break;
-		case 2: head=deleterear(head);
-			break;
-		case 3:break;
-		default:printf("Invalid Input\n");
-	}
-	}while(ch!=3);return head;
-}
-
-
-node *stack(node *head)
-{
-	int ch;
-	do
-	{
-	printf("Enter your choice:\n1.Insert Front\t2.Insert Rear\t3.Exit\n");
-	scanf("%d",&ch);
-	switch(ch)
-	{
-		case 1: head=insertfront(head);
-			break;
-		case 2: head=deletefront(head);
-			break;
-		case 3: break;
-		default:printf("Invalid Input\n");
-	}
-	}while(ch!=3);return head;
-}
-
-	
 void main()
 {
-	int i,ch,n;
-	node *head='\0';
-	do
-	{
-	printf("Enter your choice:\n1.Create\t2.Insert\t3.Delete\t4.Display\t5.Stack\t6.Exit\n");
-	scanf("%d",&ch);
-	switch(ch)
-	{
-		case 1: printf("Enter the number of students:\n");
-			scanf("%d",&n);
-			for(i=0;i<n;i++)
-			{
-				head=create(head);
-			}
-			break;
-		case 2: head=insert(head);
-			break;
-		case 3: head=delete(head);
-			break;
-		case 4: head=display(head);
-			break;
-		case 5: head=stack(head);
-			break;
-		case 6: exit(0);
-		default:printf("Invalid Input\n");
-	}
-	}while(ch!=6);
-}
+    int x,n,i;
 
+head=NULL;
+    while (1)
+    {
+        printf("===MENU===\n");
+        printf("1.create\n2.display\n3.insertrear\n4.insertfront\n5.deleterear\n6.deletefront\n7.exit\n");
+        printf("Enter the option\n");
+        scanf("%d",&x) ;
+        switch (x)
+        {
+        case 1:printf("enter the number of students\n");
+                scanf("%d",&n);
+                for(i=0;i<n;i++)
+                    create();
+                    break;
+
+case 2: display(); break;
+case 3:insertrear(); break;
+case 4:insertfront(); break;
+case 5:deleterear(); break;
+case 6:deletefront(); break;
+default:exit(0);
+
+        }
+    }
+
+}
