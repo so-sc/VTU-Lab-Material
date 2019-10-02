@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include<malloc.h>
+#include <malloc.h>
 struct employee
 {
     int ssn;
@@ -58,11 +58,12 @@ void insertfront()
     {
         head=nn;
     }
-     else{
+    else
+    {
         nn->next=head;
         head->prev=nn;
         head=nn;
-     }
+    }
 }
 void insertrear()
 {
@@ -76,19 +77,20 @@ void display()
     {
         printf("No data\n");
     }
-    else{
-        p=head;
-
-    printf("Name\tSSN\tDepartment\tDesignation\tphone number\tsalary\n");
-    while(p!=NULL)
+    else
     {
-        count++;
-        printf("%s\t%d\t%s\t%s\t%s\t%f\n",p->name,p->ssn,p->dept,p->desig,p->phone,p->salary);
-        p=p->next;
+        p=head;
+        printf("Name\tSSN\tDepartment\tDesignation\tphone number\tsalary\n");
+        while(p!=NULL)
+        {
+            count++;
+            printf("%s\t%d\t%s\t%s\t%s\t%f\n",p->name,p->ssn,p->dept,p->desig,p->phone,p->salary);
+            p=p->next;
 
+        }
+        printf("The nodes in list is %d\n",count);
     }
-    printf("The nodes in list is %d\n",count);
-}}
+}
 void deletefront()
 {
     node *p;
