@@ -84,7 +84,7 @@ void display()
         while(p!=NULL)
         {
             count++;
-            printf("%s\t%d\t%s\t%s\t%s\t%f\n",p->name,p->ssn,p->dept,p->desig,p->phone,p->salary);
+            printf("%s\t%5d\t%10s\t%10s\t%10s\t%5d\n",p->name,p->ssn,p->dept,p->desig,p->phone,p->salary);
             p=p->next;
 
         }
@@ -132,11 +132,11 @@ void deleterear()
         p=head;
         while(p->next!=NULL)
         {
-            p->next;
+            p=p->next;
         }
         q=p->prev;
         q->next=NULL;
-        q->prev=NULL;
+        p->prev=NULL;
         free(p);
     }
 }
