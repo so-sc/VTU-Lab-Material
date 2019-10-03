@@ -32,6 +32,25 @@ node *getnode()
 }
 void create()
 {
+    node *nn;
+    nn=getnode();
+    if(head==NULL)
+    {
+        head=nn;
+    }
+    else
+    {
+        nn->next=head;
+        head->prev=nn;
+        head=nn;
+    }
+}
+void insertfront()
+{
+    create();
+}
+void insertrear()
+{
     node *nn,*p;
     p=head;
     if(head==NULL)
@@ -49,25 +68,6 @@ void create()
         p->next=nn;
         nn->prev=p;
     }
-}
-void insertfront()
-{
-    node *nn;
-    nn=getnode();
-    if(head==NULL)
-    {
-        head=nn;
-    }
-    else
-    {
-        nn->next=head;
-        head->prev=nn;
-        head=nn;
-    }
-}
-void insertrear()
-{
-    create();
 }
 void display()
 {
