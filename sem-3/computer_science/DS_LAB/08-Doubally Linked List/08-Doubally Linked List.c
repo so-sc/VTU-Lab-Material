@@ -30,7 +30,7 @@ node *getnode()
     nn->next=nn->prev=NULL;
     return nn;
 }
-void create()
+void create()         //insertfront
 {
     node *nn;
     nn=getnode();
