@@ -52,7 +52,7 @@ void display()
     }
 
 }
-void create()
+void create()      //insertfront
 {
     node *temp;
     temp=getnode();
