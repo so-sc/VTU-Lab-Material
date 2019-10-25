@@ -30,7 +30,6 @@ public class LeakyBucket {
 			inp[i] = sc.nextInt();
 		}
 		System.out.println("\nSecond | Packet Received | Packet Sent | Packets Left | Packets Dropped | \n");
-		System.out.println("==========================================================================");
 		for (i = 0; i < n; i++) {
 			count += inp[i];
 			if (count > cap) {
