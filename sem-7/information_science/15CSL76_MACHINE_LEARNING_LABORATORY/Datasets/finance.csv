@@ -1,0 +1,11 @@
+slno,Refund,MaritalStatus,TaxableIncome,Cheat
+1,Yes,Single,M,No
+2,No,Married,L,No
+3,No,Single,L,No
+4,Yes,Married,M,No
+5,No,Divorced,L,Yes
+6,No,Married,L,No
+7,Yes,Divorced,H,No
+8,No,Single,L,Yes
+9,No,Married,L,No
+10,No,Single,L,Yes
