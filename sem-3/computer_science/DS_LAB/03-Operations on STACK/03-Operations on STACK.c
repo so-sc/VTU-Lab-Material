@@ -7,124 +7,98 @@
 //f. Exit.
 //Support the program with appropriate functions for each of the above operations.
 
-
 #include<stdio.h>
 #include<stdlib.h>
-#define max 5          /*stack size*/
+#define max 4
+int stack[max],ch,count=0,status=0,item,top=-1,ret;
 
- int s[max],top=-1,flag=0;
-
- int push();
- int pop();
- int display();
- int palindrome();
-
- int main()
- {
-     int o;
-     while (1)
-     {
-        printf("\n---MENU---");
-        printf("\n1.push\n2.pop\n3.display\n4.palindrome\n5.exit\n");
-        printf("Enter choice:\n");
-        scanf("%d",&o);
-        switch(o)
-        {
-            case 1: push();
-                    break;
-            case 2: pop();
-                    break;
-            case 3: display();
-                    break;
-            case 4: palindrome();
-                    break;
-            case 5: exit(0);
-            default: printf("invalid option\n");
-        }
-
-     }
-
-     return 0;
- }
-
-int push()
+void push(int stack[],int item)						//1.push
 {
-    int x;
-    if(top==(max-1))
-    {
-        printf("overflow\n");
-    }
-    else
-    {
-        printf("enter element\n");
-        scanf("%d",&x);
-        s[++top]=x;
-    }
-
-
-    return 0;
+	if(top==(max-1))
+	printf("overflow");
+	else
+	{
+	stack[++top]=item;
+	status++;
+	}
 }
 
-int pop()
+int pop(int stack[])							//2.pop
 {
-    int x;
-    if(top==-1)
-    {
-        printf("underflow\n");
-    }
-    else
-    {
-        x=s[top--];
-        printf("popped elements:%d\n",x);
-    }
+	if(top==-1)
+	printf("underflow");
+	else
+	{
+	ret=stack[top--];
+	status--;
+	printf("popped element is %d",ret);
 
-    return 0;
+	}
+return ret;
 }
 
-int display()
+int pallindrome(int stack[])						//3.palin
 {
-    int i;
-    if(top==-1)
-    {
-        printf("stack is underflow\n");
-        return 0;
-    }
-    else
-    {
-        for(i=top;i>=0;i--)
-        {
-            printf("%d\t",s[i]);
-        }
-    }
+	int i,temp,j;
+	temp=status;
+	for(i=0,j=status-1;i<status;i++,j--)
+	{
+		if(stack[i]==stack[j])
+		count++;
+		
+		else
+		{
+		printf("stack not pallin");
+		return 0;
+		}
+	}
+	if(temp==count)
+	printf("\n Stack contents are pallin");
 
-    return 0;
 }
-int palindrome()
+
+void display(int stack[])						//4.dis
 {
-    int i;
-    if(top==-1)
-    {
-        printf("underflow\n");
-    }
-    else
-    {
-
-    for(i=0;i<=((top/2)+1);i++)
-    {
-        if(s[i]==s[top-i]) continue;
-        else
-    {
-        flag=1;
-        break;
-    }
-    }
-
-    if(flag)
-    {
-        printf("Not palindrome\n");
-        flag=0;
-    }
-    else printf("palindrome\n");
-    return 0;
+	int i;
+	if(top==-1)
+	printf("Stack is empty");
+	else
+	{
+		printf("\n The stack contents are:");
+		for(i=top;i>=0;i--)
+		{
+			printf("%d\n",stack[i]);
+		}
+	}
 }
+
+
+void main()
+{
+	int c;
+	
+	do
+	{
+	printf("Enter operator:\n");
+	printf("***MENU***\n1.Push\t2.Pop\t3.palindrome\t4.display\t5.exit\n");
+	scanf("%d",&c);
+
+	switch(c)
+	{
+	case 1: printf("Enter item to be pushed:\n");
+		scanf("%d",&item);
+		push(stack,item);
+		break;
+	case 2: item=pop(stack);
+		break;
+	case 3: pallindrome(stack);
+		break;
+	case 4: display(stack);
+		break;
+	case 5: exit(0);
+	default:printf("invald operator");
+		break;
+	}
+	}while(c!=5);
+	
 }

@@ -1,120 +1,110 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<malloc.h>
+
 struct bst
 {
-    int data;
-    struct bst *lc,*rc;
+	int data;
+	struct bst *left;
+	struct bst *right;
 };
-typedef struct bst node;
 
-node *create(node *root,int a)
-{
-    node *temp;
-    if(root ==NULL)
-    {
-        temp=(node*) malloc(sizeof(node));
-        root =temp;
-        temp->data=a;
-        temp->rc=temp->lc=NULL;
-        return root;
-    }
-    else if(a<root->data) root->lc=create(root->lc,a);
-    else if(a>root->data) root->rc=create(root->rc,a);
-    else return root;
-}
- void search(node *root,int k)
- {
-     if(root==NULL) printf("Key not found\n");
-     else if(k<root->data) search(root->lc,k);
-     else if(k>root->data) search(root->rc,k);
-     else printf("Key is found\n");
-}
-void preorder(node *root)
-{
-    if(root!=NULL)
-    {
-        printf("%d\t",root->data);
-        preorder(root->lc);
-        preorder(root->rc);
-    }
-}
-void postorder(node *root)
-{
-    if(root!=NULL)
-    {
+typedef struct bst NODE;
+NODE *node;
 
-        postorder(root->lc);
-        postorder(root->rc);
-        printf("%d\t",root->data);
-    }
-}
-void inorder(node *root)
+NODE *create(NODE *node,int data)
 {
-    if(root!=NULL)
-    {
-        inorder(root->lc);
-        printf("%d\t",root->data);
-        inorder(root->rc);
-    }
+	NODE *temp;
+	if(node==NULL)
+	{
+		temp=(NODE*)malloc(sizeof(node));
+		temp->data=data;
+		temp->left=temp->right=NULL;
+	}	
+	return temp;
 }
-int traverse(node *root)
-{
-    int ch;
-    while(1)
-    {
-        printf("\n---MENU---\n");
-        printf("1. Inorder traversal\n2. Preorder traversal\n3. Postorder traversal\n4. exit\n");
-        printf("Enter the option\n");
-        scanf("%d",&ch);
-        switch (ch)
-        {
-        case 1:printf("Inorder traversal\n");
-                inorder(root);
-                break;
-        case 2:printf("Preorder traversal\n");
-                preorder(root);
-                break;
-        case 3:printf("Postorder traversal\n");
-                postorder(root);
-                break;
-        default:return 0;
 
-        }
-    }
+NODE *search(NODE *node,int data)
+{
+	if(node==NULL)
+	printf("No element found");
+	else if(data > node->data)
+	{
+		node->right=search(node->right,data);
+	}
+	else if(data < node->data)
+	{
+		node->left=search(node->left,data);
+	}
+	else 
+	{
+		printf("Element found is %d:\n",node->data);
+	}	
+	return node;
 }
+	
+void inorder(NODE*node)
+{
+	if(node!=NULL)
+	{
+		inorder(node->left);
+		printf("%d\t",node->data);		
+		inorder(node->right);
+	}
+}	
+
+void preorder(NODE*node)
+{
+	if(node!=NULL)
+	{
+		printf("%d\t",node->data);
+		preorder(node->left);
+		preorder(node->right);
+	}
+}
+
+void postorder(NODE*node)
+{
+	if(node!=NULL)
+	{
+		postorder(node->left);
+		postorder(node->right);
+		printf("%d\t",node->data);	
+	}
+}
+
+
 void main()
 {
-    node *root;
-    int i,n,ele,key,ch;
-    root=NULL;
-    while (1)
-    {
-        printf("\n---MENu---\n");
-        printf("1. create\n2. search\n3. traversal\n4. exit\n");
-        printf("Enter the option\n");
-        scanf("%d",&ch);
-        switch(ch)
-        {
-            case 1:printf("Enter the number of elements\n");
-                    scanf("%d",&n);
-                    printf("Enter the elements to be added\n");
-                    for(i=0;i<n;i++)
-                    {
-                         scanf("%d",&ele);
-                         root=create(root,ele);
-                    }
-                    break;
-            case 2:printf("Enter the element to be searched\n");
-                    scanf("%d",&key);
-                    search(root,key);
-                    break;
-            case 3:traverse(root);
-                    break;
-            case 4:exit(0);
-            default:printf("Invalid option\n");
-
-        }
-    }
-
+	int i,n,ch,data;
+	NODE *root=NULL;
+	do{
+		printf("Enter your choice:\n1.Create\t2.Search\t3.Inorder\t4.Preorder\t5.Postorder\t6.Exit\n");
+		scanf("%d",&ch);
+		switch(ch)
+		{
+			case 1: printf("Enter N value: \n");
+				scanf("%d",&n);
+				printf("enter tree elements in ascending order\n");
+				for(i=0;i<n;i++)
+				{
+					scanf("%d\t",&data);
+					create(root,data);
+				}
+				break;
+			case 2: printf("Enter the element to be searched:\n");
+				scanf("%d",&data);
+				root=search(root,data);
+				break;
+			case 3:inorder(root);
+				break;
+			case 4:preorder(root);
+				break;
+			case 5:postorder(root);
+				break;
+			case 6: exit(0);
+			default: printf("Invalid\n");					
+		}
+	}while(ch!=6);
 }
+	
