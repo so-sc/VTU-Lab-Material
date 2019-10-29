@@ -73,10 +73,10 @@ NODE* read_poly(NODE *head)
 	{
 		printf("\nEnter coeff:");
 		scanf("%d",&cf);
-		printf("\nEnter x, y, z powers(0-indicate NO term): ");
+		printf("\nEnter x, y, z powers(0-indicate NO term): \n");
 		scanf("%d%d%d", &px, &py, &pz);
 		head=insert_rear(cf,px,py,pz,head);
-		printf("\nIf you wish to continue press 1 otherwise 0: ");
+		printf("\nIf you wish to continue press 1 otherwise 0: \n");
 		scanf("%d", &ch);
 	}while(ch != 0);
 	return head;
@@ -157,33 +157,33 @@ void main()
 
 	while(1)
 	{
-		printf("\n\n 1.Evaluate polynomial\n 2.Add two polynomials\n3.Exit\n");
+		printf("\n\n1.Evaluate polynomial\n2.Add two polynomials\n3.Exit\n");
 		printf("Enter your choice: ");
 		scanf("%d", &ch);
 		switch(ch)
 		{
 			case 1: h1->link=h1;
-				printf("\nEnter polynomial to evaluate:\n");
-				h1=read_poly(h1);
-				display(h1);
-				evaluate(h1);
-				break;
+				    printf("\nEnter polynomial to evaluate:\n");
+				    h1=read_poly(h1);
+				    display(h1);
+				    evaluate(h1);
+				    break;
 			case 2: h1->link=h1;
-				printf("\nEnter the first polynomial:");
-				h1=read_poly(h1);
-				printf("\nEnter the second polynomial:");
-				h2=read_poly(h2);
-				h3=add_poly(h1,h2,h3);
-				printf("\nFirst polynomial is:");
-				display(h1);
-				printf("\nSecond polynomial is: ");
-				display(h2);
-				printf("\nThe sum of 2 polynomials is:");
-				display(h3);
-				break;
+				    printf("\nEnter the first polynomial:");
+				    h1=read_poly(h1);
+                    printf("\nEnter the second polynomial:");
+				    h2=read_poly(h2);
+				    h3=add_poly(h1,h2,h3);
+				    printf("\nFirst polynomial is:");
+				    display(h1);
+				    printf("\nSecond polynomial is: ");
+				    display(h2);
+				    printf("\nThe sum of 2 polynomials is:");
+				    display(h3);
+				    break;
 			case 3: exit(0);
-				default:printf("\nInvalid entry");
-				break;
+            default:printf("\nInvalid entry");
+                    break;
 		} //end of switch
 	} // end of while
 } // end of main()
