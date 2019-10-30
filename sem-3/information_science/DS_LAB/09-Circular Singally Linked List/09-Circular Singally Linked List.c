@@ -162,16 +162,16 @@ void main()
 		scanf("%d", &ch);
 		switch(ch)
 		{
-			case 1: h1->link=h1;
+			      case 1:h1->link=h1;
 				    printf("\nEnter polynomial to evaluate:\n");
 				    h1=read_poly(h1);
 				    display(h1);
 				    evaluate(h1);
 				    break;
-			case 2: h1->link=h1;
+			    case 2: h1->link=h1;
 				    printf("\nEnter the first polynomial:");
 				    h1=read_poly(h1);
-                    printf("\nEnter the second polynomial:");
+                                    printf("\nEnter the second polynomial:");
 				    h2=read_poly(h2);
 				    h3=add_poly(h1,h2,h3);
 				    printf("\nFirst polynomial is:");
@@ -181,9 +181,9 @@ void main()
 				    printf("\nThe sum of 2 polynomials is:");
 				    display(h3);
 				    break;
-			case 3: exit(0);
-            default:printf("\nInvalid entry");
-                    break;
+			    case 3: exit(0);
+                            default:printf("\nInvalid entry");
+                                    break;
 		} //end of switch
 	} // end of while
 } // end of main()
