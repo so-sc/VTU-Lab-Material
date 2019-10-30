@@ -46,42 +46,42 @@ void main()
         scanf("%d",&ch);
         switch(ch)
         {
-            case 1:printf("Enter number of vertices\n");
-            scanf("%d",&n);
-            printf("Adjacency matrix representation\n");
-            for(i = 1;i<=n;i++)
-            {
-                for(j=1;j<=n;j++)
-                {
-                    scanf("%d",&a[i][j]);
-                }
-            }
-            break;
-            case 2:printf("print reachable node using DFS method\n");
-            printf("Enter the source\n");
-            scanf("%d",&s);
-            printf("Nodes reachable from %d\n",s);
-            dfs(s);
-            for(i=1;i<=n;i++)
-            {
-                if(v[i] == 0)
-                {
-                    printf("%d is not visited and it is disconnected graph\n",i);
-                }
-            }
-            break;
-            case 3:printf("Print reachable node using BFS method\n");
-            printf("Enter the source\n");
-            scanf("%d",&s);
-            bfs(s);
-            for(i=1;i<=n;i++)
-            {
-                if(u[i]==0)
-                {
-                    printf("%d is not visited and it is disconnected graph\n",i);
-                }
-            }
-            break;
+            case 1: printf("Enter number of vertices\n");
+                    scanf("%d",&n);
+                    printf("Adjacency matrix representation\n");
+                    for(i = 1;i<=n;i++)
+                    {
+                        for(j=1;j<=n;j++)
+                        {
+                            scanf("%d",&a[i][j]);
+                        }
+                    }
+                    break;
+            case 2: printf("print reachable node using DFS method\n");
+                    printf("Enter the source\n");
+                    scanf("%d",&s);
+                    printf("Nodes reachable from %d\n",s);
+                    dfs(s);
+                    for(i=1;i<=n;i++)
+                    {
+                        if(v[i] == 0)
+                        {
+                            printf("%d is not visited and it is disconnected graph\n",i);
+                        }
+                    }
+                    break;
+            case 3: printf("Print reachable node using BFS method\n");
+                    printf("Enter the source\n");
+                    scanf("%d",&s);
+                    bfs(s);
+                    for(i=1;i<=n;i++)
+                    {
+                        if(u[i]==0)
+                        {
+                            printf("%d is not visited and it is disconnected graph\n",i);
+                        }
+                    }
+                    break;
             case 4: exit(0);
             
         }
