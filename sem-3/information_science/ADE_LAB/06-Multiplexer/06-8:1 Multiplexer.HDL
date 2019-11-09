@@ -1,0 +1,17 @@
+module mux8to1(s,d,y);
+input [2:0]s;
+output [7:0]d;
+output y;
+reg y;
+always @ (s or d)
+case(s)
+0:y= d[0];
+1:y= d[1];
+2:y= d[2];
+3:y= d[3];
+4:y= d[4];
+5:y= d[5];
+6:y= d[6];
+7:y= d[7];
+endcase
+endmodule
