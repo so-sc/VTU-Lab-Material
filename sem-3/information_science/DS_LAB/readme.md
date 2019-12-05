@@ -102,7 +102,7 @@
 2. Open a terminal and type the below command to change directory into `VTU-Lab-Material/sem-3/computer_science/DS_LAB`
 
     ```sh
-    $ cd VTU-Lab-Material/sem-3/computer_science/DS_LAB
+    $ cd VTU-Lab-Material/sem-3/information_science/DS_LAB
     ```
 3. To compile and execute the C program using GCC (GNU Compiler Collection)
     ```sh
