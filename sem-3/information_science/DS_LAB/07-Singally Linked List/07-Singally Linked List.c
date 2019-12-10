@@ -93,6 +93,7 @@ void deletefront()
     {
         p=head;
         head=head->link;
+        p->link=NULL;
     }
     free(p);
 
