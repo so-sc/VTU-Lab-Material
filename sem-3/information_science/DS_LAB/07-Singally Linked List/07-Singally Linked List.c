@@ -101,7 +101,7 @@ void deleterear()
 {
     node *p,*q;
     if(head==NULL) printf("no student data\n");
-    else if (head->link==1)
+    else if (head->link==NULL)
     {
         p=head;
         head=NULL;
