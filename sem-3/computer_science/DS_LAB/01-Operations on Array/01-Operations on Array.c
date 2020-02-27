@@ -1,112 +1,96 @@
 #include<stdio.h>
 #include<stdlib.h>
-int a[100],i,elem,pos,n;
-int create()
-{
+#include<conio.h>
+int a[10],n,item,i,pos;
 
-    printf("Enter the number of elements\n");
-    scanf("%d",&n);
-    if(n==0)
-    {
-        printf("Array is empty\n");
-        return 0;
-    }
-    else
-    {
-        printf("Enter the elements\n");
-        for(i=0;i<n;i++)
-        {
-            scanf("%d",&a[i]);
-        }
-    }
-return 0;
+void create();
+void display();
+void insert();
+void remove();
+
+
+void create()
+{
+	printf("Enter the size of array:");
+	scanf("%d",&n);
+	printf("\nEnter the elements:\n");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
 }
-int display()
+
+void display()
 {
-    if(n==0)
-    {
-        printf("Array is empty\n");
-        return 0;
-    }
-    else
-    {
-        printf("Elements:\n");
-        for(i=0;i<n;i++)
-        {
-            printf("%d\n",a[i]);
-        }
-    }
-return 0;
+	printf("\nThe array elements are:\n");
+	for(i=0;i<n;i++)
+	{
+		printf("%d\t",a[i]);
+	}
 }
-int insert()
-{
-    printf("Enter the position where new element has to be entered\n");
-    scanf("%d",&pos);
-    if(!(pos>0 && pos<=n+1))
-    {
-        printf("Invalid position\n");
-        return 0;
-    }
-    else
-    {
-        printf("Enter the new element\n");
-        scanf("%d",&elem);
-        for(i=n;i>=pos;i--)
-        {
-            a[i]=a[i-1];
-        }
-        a[pos-1]=elem;
-        n+=1;
-        display();
-    }
-    return 0;
 
+void insert()
+{
+	printf("Enter the position of element to be inserted in an array: ");
+	scanf("%d",&pos);
+	printf("\nEnter the element to be inserted in an array: ");
+	scanf("%d",&item);
+	if(pos<=n-1)
+	{
+		for(i=n-1;i>=pos;i--)
+		{
+			a[i+1]=a[i];
+		}
+		a[pos]=item;
+		n=n+1;
+	}
+	else
+	{
+		printf("Invalid position\n");
+	}
 }
-int delete()
-{
-    printf("Enter the position where element has to be deleted\n");
-    scanf("%d",&pos);
-    if(!(pos>0 && pos<=n))
-    {
-        printf("Invalid option");
-        return 0;
-    }
-    else
-    {
-        for(i=pos;i<n;i++)
-        {
-            a[i-1]=a[i];
-        }
-        n-=1;
-        display();
-    }
-    return 0;
 
+void remove()
+{
+	printf("Enter the position of element to be deleted in an array:");
+	scanf("%d",&pos);
+	item=a[pos];
+	if(pos<=n-1)
+	{
+		for(i=pos;i<=n-1;i++)
+		{
+			a[i]=a[i+1];
+		}
+		n=n-1;
+		printf("The deleted element= %d\n",item);
+	}
+	else
+		printf("Invaild pos\n");
 }
-int main()
-{
 
-    while(1)
-    {
-        int o;
-        printf("\nMENU\n");
-        printf("1.Create\n2.Display\n3.Insert\n4.Delete\n5.Exit\n");
-        printf("Enter the option\n");
-        scanf("%d",&o);
-        switch(o)
-        {
-            case 1:create();
-                   break;
-            case 2:display();
-                    break;
-            case 3:insert();
-                    break;
-            case 4:delete();
-                    break;
-            case 5:exit(0);
-            default:printf("invalid option\n");
+void main()
+{       
+	int c;
+	clrscr();
+	do
+	{
+        	printf("Enter operator:\n");
+        	printf("***MENU***\n1.CREATE\t2.Display\t3.insert\t4.delete\t5.exit\n");
+        	scanf("%d",&c);
 
-        }
-    }
-    return 0;
+         	switch(c)
+        	{
+          		case 1: create();
+	                	break;
+                        case 2: display();
+         	        	break;
+                 	case 3: insert();
+        	        	break;
+                 	case 4: remove();
+	                 	break;
+                	case 5: exit(0);
+                	default:printf("invald operator");
+        	}
+	}while(c!=5);
+	getch();
 }

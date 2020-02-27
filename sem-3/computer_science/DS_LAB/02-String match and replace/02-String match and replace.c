@@ -1,10 +1,10 @@
-#include<string.h>
+
 #include<stdio.h>
 char str[100],pat[100],rep[100],ans[100];
 int i,j,k,m,c,flag=0;
 
 
-void putmat()
+void strmatch()
 {
 	int i=c=m=j=0;
 	while(str[c]!='\0')
@@ -18,7 +18,7 @@ void putmat()
 				for(k=0;rep[k]!='\0';k++,j++)
 				{ans[j]=rep[k];
 				i=0;c=m;
-				}
+				}	
 			}
 		}
 		else
@@ -36,14 +36,14 @@ void putmat()
 void main()
 {
 	printf("Enter the main string\n");
-	gets(str);
+	scanf("%s",str);
 	printf("Enter the pat string\n");
-	gets(pat);
+	scanf("%s",pat);
 	printf("Enter the rep string\n");
-	gets(rep);
-	putmat();
+	scanf("%s",rep);
+	strmatch();
 	if(flag==1)
-	printf("Pattern string is found in the main string\n The final string is:\n%s",ans);
+	printf("The final string is:\n%s",ans);
 	else
-	printf("Pattern string is not found on the main string\n");
+	printf("Invalid string");
 }
