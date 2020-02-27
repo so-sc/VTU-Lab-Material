@@ -1,5 +1,5 @@
 *SYLLABUS*
-| program no. | Description |
+(VTU-Lab-Material/sem-4/information_science/ADA/READMEmd)| program no. | Description |
 | --- | --- |
 |Program-1(a)|Create a Java class called Student with the following details as variables within it. (i) USN (ii)Name(iii)Branch (iv) Phone Write a Java program to create n Student objects and print the USN, Name, Branch, and Phone of these objectswithsuitable headings.|
 |Program-1(b)|Write a Java program to implement the Stack using arrays.Write Push(), Pop(), and Display() methods to demonstrate its working. |
