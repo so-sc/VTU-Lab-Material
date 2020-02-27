@@ -1,4 +1,4 @@
-[*SYLLABUS*](VTU-Lab-Material/sem-4/information_science/ADA/READ.me)
+[*SYLLABUS*](https://github.com/sharansk792000/VTU-Lab-Material/blob/master/sem-4/information_science/ADA/README.md)
 
 | program no. | Description |
 | --- | --- |
