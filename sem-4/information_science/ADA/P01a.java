@@ -16,37 +16,34 @@ class Student{
     String name;
     String branch;
     long phone;
-    void read(String Usn,  String Name,  String Branch,  long Phone)
+    Scanner sc=new Scanner(System.in);
+    void read()
     {
-        usn=Usn;
-        name=Name;
-        branch=Branch;
-        phone=Phone;
+        System.out.println("Enter usn");
+        usn=sc.next();
+        System.out.println("Enter name");
+        name=sc.next();
+        System.out.println("Enter branch");
+        branch=sc.next();
+        System.out.println("Enter phone number");
+        phone=sc.nextLong();
     }
-    
     void display()
     {
-        System.out.println("USN : "+usn+"\tName : "+name+"\tBranch : "+branch+"\tPhone Number : "+phone);
+        System.out.println(usn+"\t"+name+"\t"+branch+"\t"+phone);
     }
     public static void main( String args[])
     {
          Student s[]=new Student[100];
          Scanner sc=new Scanner(System.in);
         System.out.println("enter the number of students");
-        final int n=sc.nextInt();
-        for(int i=0;i<n;i++) s[i]=new Student();
+        int n=sc.nextInt();
         for (int i=0;i<n;i++) 
-       {
-       System.out.println("Enter usn");
-        String usn=sc.next();
-       System.out.println("Enter name");
-        String name=sc.next();
-       System.out.println("Enter branch");
-        String branch=sc.next();
-       System.out.println("Enter phone number");
-        long phone=sc.nextLong();
-        s[i].read(usn,name,branch,phone);
-       }
+        {
+            s[i]=new Student();
+            s[i].read();
+        }
+        System.out.println("\nUSN\tName\tBanch\tPhone number");
        for (int i=0;i<n;i++) s[i].display();
     }
 
