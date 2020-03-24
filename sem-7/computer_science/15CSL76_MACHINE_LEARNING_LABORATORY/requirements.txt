@@ -1,5 +1,5 @@
 backcall==0.1.0
-bleach==3.0.2
+bleach==3.1.2
 decorator==4.3.0
 defusedxml==0.5.0
 entrypoints==0.2.3
@@ -47,7 +47,7 @@ webencodings==0.5.1
 widgetsnbextension==3.4.2
 backcall==0.1.0
 bayespy==0.5.17
-bleach==3.0.2
+bleach==3.1.2
 cycler==0.10.0
 decorator==4.3.0
 defusedxml==0.5.0
