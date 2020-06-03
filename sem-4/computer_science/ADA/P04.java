@@ -18,7 +18,7 @@ class QuickSort
 		p=a[low];
 		i=low+1;
 		j=high;
-		while(low<high)
+		while(i<j)
 		{
 			while(a[i]<=p&&i<high)
 				i++;
