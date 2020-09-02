@@ -1,0 +1,45 @@
+DISPLAY MACRO MSG
+  LEA DX,MSG
+  MOV AH,09H
+ENDM
+
+DATA SEGMENT
+  ARRAY DW 1,2,3,4,5
+  N DW 5
+DATA ENDS
+
+ASSUME CS:CODE DS:DATA
+CODE SEGMENT
+  START: MOV AX,DATA
+         MOV DS,AX
+         MOV BX,00H
+         DEC CX,N
+                
+ AGAIN: CMP BX,CX
+        JC NOTFOUND
+        MOV AX,BX
+        ADD CX,BX
+        SHR AX,01H
+        MOV SI,AX
+        ADD SI,SI
+        CMP ARRAY[SI],KEY
+        JE FOUND
+        JC SETLB 
+        DEC AX
+        MOV CX,AX
+        JMP AGAIN
+        
+ SETLB: INC AX
+        MOV BX,AX
+        JMP AGAIN
+
+FOUND:  DISPLAY MSG1
+        JMP QUIT
+     
+NOTFOUND: DISPLAY MSG2
+
+QUIT: MOV AH,4CH
+      INT 21H
+
+CODE ENDS
+END START

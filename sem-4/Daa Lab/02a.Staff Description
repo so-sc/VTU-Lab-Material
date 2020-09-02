@@ -1,0 +1,166 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package program2a;
+import java.util.Scanner;
+
+
+public class Staff
+{
+    int staffid;
+    String name;
+    String phone;
+    int salary;
+    Scanner input =new Scanner(System.in);
+    Scanner in=new Scanner(System.in);
+
+    void read()
+    {
+        System.out.println("Enter the staffid");
+        staffid=input.nextInt();
+        System.out.println("Enter the name");
+        name=in.nextLine();
+        System.out.println("Enter the phonenumber");
+        phone=in.nextLine();
+        System.out.println("Enter the salary");
+        salary=input.nextInt();
+    }
+}
+
+
+class Teaching extends Staff
+{
+    String domain;
+    String publisher;
+
+    void read()
+    {
+        super.read();
+        System.out.println("Enter the domain");
+        domain=in.nextLine();
+        System.out.println("Enter the publications");
+        publisher=in.nextLine();
+    }
+
+    void display()
+    {
+        System.out.println(staffid+"\t"+name+"\t"+phone+"\t"+salary+"\t"+domain+"\t"+publisher+"\t");
+        
+    }
+
+   }
+
+
+class Technical extends Staff
+ {
+    int n;
+     String[] skills;
+
+     void read()
+            {
+               super.read();
+               System.out.println("Enter the no. of skills");
+               n=input.nextInt();
+               skills=new String[n];
+               for(int i=0;i<n;i++)
+               {
+                 System.out.println("Enter the skills"+(i+1));
+                 skills[i]=input.next();
+                 
+               }
+            }
+            void display()
+            {
+                System.out.print(staffid+"\t"+name+"\t"+phone+"\t"+salary+"\t");
+                for(int j=0;j<skills.length;j++)
+                {
+                    System.out.print(skills[j]+"\n\t\t\t\t");
+                }
+                System.out.print("\n");
+            
+            }
+        }
+            class Contractor extends Staff
+            {
+                int period;
+                void read()
+                {
+                    super.read();
+                    System.out.println("How many years of contract");
+                    period=input.nextInt();
+                    
+                }
+                void display()
+                {
+                    System.out.println(staffid+"\t"+name+"\t"+phone+"\t"+salary+"\t"+period+"\t");
+                    
+                }
+                
+            }
+      class Myapp 
+      {
+          static int n,m,o;
+          static Scanner input=new Scanner(System.in);
+          
+    public static void main(String[] args) 
+    {
+       Teaching []s;
+       Technical[]t;
+       Contractor[]c;
+       System.out.println("\n****Read technical staff****");
+       System.out.println("How many no. of teaching staff ");
+       m=input.nextInt();
+       s=new Teaching[m];
+       for(int i=0;i<m;i++)
+       {
+           s[i]=new Teaching();
+           System.out.println("Enter the teaching staff"+(i+1)+"details");
+           s[i].read();
+           
+       }
+       System.out.println("\n****Read technical staff details****");
+        System.out.println("How many no. of technical staff ");
+        n=input.nextInt();
+       t=new Technical[n];
+       for(int i=0;i<n;i++)
+       {
+           t[i]=new Technical();
+           System.out.println("Enter the technical staff"+(i+1)+"details");
+           t[i].read();
+           
+       }
+       System.out.println("\n****Read contractor staff details****");
+       System.out.println("How many no. of contractor staff ");
+        o=input.nextInt();
+       c=new Contractor[n];
+       for(int i=0;i<o;i++)
+       {
+           c[i]=new Contractor();
+           System.out.println("Enter the contractor staff"+(i+1)+"details");
+           c[i].read();
+           
+       }
+       System.out.println("\n****Teaching staff****");
+       System.out.println("SID\tNAME\tPHONE\tSALARY\tDOMAIN\tPUBLICATION");
+       for(int i=0;i<m;i++)
+       {
+           s[i].display();
+       }
+       System.out.println("\n****Technical staff****");
+       System.out.println("SID\tNAME\tPHONE\tSALARY\tSKILLS");
+       for(int i=0;i<n;i++)
+       {
+           t[i].display();
+       }
+       System.out.println("\n****Contractor staff****");
+       System.out.println("SID\tNAME\tPHONE\tSALARY\tPERIOD");
+       for(int i=0;i<o;i++)
+       {
+           c[i].display();
+       }
+       
+    }
+    
+}

@@ -1,0 +1,71 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class Shortest{
+  public static void main(string[],args){
+
+    int cost[][]=new int[10][10];
+    int t[][]=new int[10][10];
+    int i,j,mincost=0;
+    Scanner in=new Scanner(System.in);
+
+    System.out.println("Prims Algorithm");
+    System.out.println("Enter the nodes");
+    int n=in.nextInt();
+
+    System.out.println("Enter the cost matrix");
+    for(i=1;i<=n;i++)
+        for(j=1;j<=n;j++)
+          cost[i][j]=in.nextInt();
+    for(i=1;i<=n;i++)
+        for(j=1;j<=n;j++)
+          t[i][j]=99;
+
+    System.out.println("Minimum spanning tree edges and costs are");
+    mincost(cost,n,t);
+    System.out.println("Minmum spanning tree is"+mincost);
+}
+
+
+Static int prims(int g[][],int n,int t[][]){
+  int i,j,k;
+  int u,v,mincost;
+  int visited[]=new int[10];
+  visted[1]=1;
+  
+  for(k=2;k<=n;i++)
+  visted[k]=0;
+  mincost=0;
+  for(k=1;k<=n;i++)
+  {
+    min=99;
+    u=1;
+    v=1;
+    for(i=1;i<=n;i++)
+    {
+      if(visited[i]==1)
+      for(j=1;j<=n;j++)
+      if(g[i][j]<min)
+      {
+        min=g[i][j];
+        u=i;
+        v=j;
+      }
+   }
+   t[u][v]=t[v][u]=g[u][v];
+   mincost=mincost+g[u][v];
+   visited[v]=1;
+   System.out.println("("+u+","+v+")"+"="+t[u][v]);
+    
+   for(i=1;i<=n;i++)
+   for(j=1;j<=n;j++)
+   if(visited[i]!=0 && visited[j]!=0)
+   g[i][j]=g[j][i]=99;
+   }
+    return(mincost);
+ }
+}
+    
+
+
+

@@ -1,0 +1,48 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package program3a;
+import java.util.Scanner;
+class Compute
+{
+    private int a,b;
+    public Compute(int m,int n)
+    {
+        a=m;
+        b=n;
+    }
+    public void compute_aby_bc()
+    {
+        try
+                {
+                    if(b!=0)
+                    {
+                        System.out.println("Result="+(float)1.0*a/b);
+                    }
+                    else throw new ArithmeticException("ERROR");
+                                  
+                }
+        catch(ArithmeticException e)
+        {
+            System.out.println("ERROR"+e);
+        }
+    }
+}
+
+public class Lab3a {
+
+   
+    public static void main(String[] args) {
+    
+        Scanner in=new Scanner(System.in);
+        System.out.println("Enter a=");
+        int a=in.nextInt();
+        System.out.println("Enter b=");
+        int b=in.nextInt();
+        Compute compute=new Compute(a,b);
+        compute.compute_aby_bc();
+    }
+    
+}
