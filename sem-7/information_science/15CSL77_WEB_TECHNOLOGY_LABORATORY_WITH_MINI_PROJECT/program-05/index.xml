@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="5.css"?>
+<!DOCTYPE student [
+<!ELEMENT student_info (h1,h2+,ad+)>
+<!ELEMENT ad (label)>
+<!ELEMENT usn (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT col (#PCDATA)>
+<!ELEMENT branch (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT label (#PCDATA|usn|name|col|branch|year|email)*>
+<!ELEMENT h2 (#PCDATA)>
+<!ELEMENT h1 (#PCDATA)>]>
+<student_info>
+<h1>Student information</h1>
+
+<h2>Student1</h2>
+<ad><label>USN:<usn>4SH11CS001</usn></label></ad>
+<ad><label>NAME:<name>AAA</name></label></ad>
+<ad><label>COLLEGE:<col>SDIT</col></label></ad>
+<ad><label>BRANCH:<branch>CSE</branch></label></ad>
+<ad><label>YEAR:<year>2011</year></label></ad>
+<ad><label>EMAIL:<email>abc@gmail.com</email></label></ad>
+
+<h2>Student2</h2>
+<ad><label>USN:<usn>4SH11IS002</usn></label></ad>
+<ad><label>NAME:<name>BBB</name></label></ad>
+<ad><label>COLLEGE:<col>SDIT</col></label></ad>
+<ad><label>BRANCH:<branch>ISE</branch></label></ad>
+<ad><label>YEAR:<year>2012</year></label></ad>
+<ad><label>EMAIL:<email>efg@gmail.com</email></label></ad>
+
+<h2>Student3</h2>
+<ad><label>USN:<usn>4SH11CS003</usn></label></ad>
+<ad><label>NAME:<name>CCC</name></label></ad>
+<ad><label>COLLEGE:<col>SDIT</col></label></ad>
+<ad><label>BRANCH:<branch>CSE</branch></label></ad>
+<ad><label>YEAR:<year>2013</year></label></ad>
+<ad><label>EMAIL:<email>hij@gmail.com</email></label></ad>
+</student_info>
+
+
